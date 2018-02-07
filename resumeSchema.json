@@ -63,7 +63,7 @@
             }
           },
           "endDate": {
-            "type": "null",
+            "type": "string",
             "id": "http://jsonschema.net/experience/0/endDate",
             "required": false
           },
@@ -75,6 +75,11 @@
           "title": {
             "type": "string",
             "id": "http://jsonschema.net/experience/0/title",
+            "required": false
+          },          
+          "team": {
+            "type": "string",
+            "id": "http://jsonschema.net/experience/0/team",
             "required": false
           }
         }
