@@ -14,10 +14,28 @@
       "favoriteActivities": [ "library code", "refactoring", "automation", "deployment" ]
     },
     { 
-      "skillName": [ "Windows", "Windows Server" ],
+      "skillName": [ "Windows", "Windows Server", "PowerShell" ],
       "level": "journeyman",
       "yearsOfExperience": 10,
       "favoriteActivities": [ "Environment Design", "Active Directory" ]
+    },
+    {
+      "skillName": [ "UX : XAML / WPF" ],
+      "level" : "journeyman",
+      "yearsOfExperience" : 3,
+      "favoriteActivities": [ "Ergonomic Design", "Delight moments", "Consistency" ]
+    },
+    {
+      "skillName": [ "Html5", "CSS3", "Javascript", "TypeScript"],
+      "level": "journeyman",
+      "yearsOfExperience": 5,
+      "favoriteActivities": [ "Single Page Appliations", "Api Design", "Performance" ]
+    },
+    {
+      "skillName": [ "Azure", "Windows Azure" ],
+      "level": "journeyman",
+      "yearsOfExperience": 4,
+      "favoriteActivities": [ "ApplicationInsights", "Storage", "HyperScale", "Analytics", "Service Design"]
     }
   ],
   "experience": [
