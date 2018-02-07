@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/ZakSir/HireMe/master/resumeSchema.json",
   "candidate": {
-    "fullName": "Zak Kapono Fargo",
+    "fullName": "Zak Fargo",
     "address": "1300 South Puget Drive | #119 | Renton, WA 98296",
     "email": "hirezakfargo@gmail.com"
   },
@@ -22,16 +22,30 @@
   ],
   "experience": [
     {
+      "company": "Microsoft",
       "title": "Software Engineer II",
-            "startDate": "2015-04-26T10:48:26-08:00",
+      "team": "Enterprise Analytics and Tools",
+      "startDate": "2015-04-27T09:00:00-08:00",
       "endDate": null,
       "dutiesAndAccomplishments": [
-        "Thing A",
-        "Thing B"
-      ]
+        "Designed end to end business automation solutions.",
+        "Created custom MediaWiki private deployment, with low maintenance and high automation, eliminating legacy documentation systems and headcount.",
+        "Reduced headcount with self-service automation engine.",
+        "Drove DevOps culture across organization, increasing resiliency of live site products.",
+        "Created self Service team engagement application, elminating the need for engineering hours.",
+        "Developed rapid solutions using Azure to enable GTM strategies to be piloted quickly."
+      ]     
     },
     {
-      "title": "Software Engineer I"
+      "company" : "Microsoft",
+      "title": "Software Engineer I",
+      "team": "Bing Offers",
+      "startDate": "2014-04-28T09:00:00-08:00",
+      "endDate": "2015-04-24T05:00:00-08:00",
+      "dutiesAndAccomplishments": [
+        "Implemented and d"
+      ]
+
     }
   ],
   "education": {
