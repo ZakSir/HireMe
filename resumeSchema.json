@@ -1,0 +1,131 @@
+﻿{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "candidate": {
+      "type": "object",
+      "id": "http://jsonschema.net/candidate",
+      "required": false,
+      "properties": {
+        "address": {
+          "type": "string",
+          "id": "http://jsonschema.net/candidate/address",
+          "required": false
+        },
+        "email": {
+          "type": "string",
+          "id": "http://jsonschema.net/candidate/email",
+          "required": false
+        },
+        "fullName": {
+          "type": "string",
+          "id": "http://jsonschema.net/candidate/fullName",
+          "required": false
+        }
+      }
+    },
+    "education": {
+      "type": "object",
+      "id": "http://jsonschema.net/education",
+      "required": false,
+      "properties": {
+        "degrees": {
+          "type": "array",
+          "id": "http://jsonschema.net/education/degrees",
+          "required": false
+        },
+        "highestDegreeObtained": {
+          "type": "string",
+          "id": "http://jsonschema.net/education/highestDegreeObtained",
+          "required": false
+        }
+      }
+    },
+    "experience": {
+      "type": "array",
+      "id": "http://jsonschema.net/experience",
+      "required": false,
+      "items": {
+        "type": "object",
+        "id": "http://jsonschema.net/experience/0",
+        "required": false,
+        "properties": {
+          "dutiesAndAccomplishments": {
+            "type": "array",
+            "id": "http://jsonschema.net/experience/0/dutiesAndAccomplishments",
+            "required": false,
+            "items": {
+              "type": "string",
+              "id": "http://jsonschema.net/experience/0/dutiesAndAccomplishments/0",
+              "required": false
+            }
+          },
+          "endDate": {
+            "type": "null",
+            "id": "http://jsonschema.net/experience/0/endDate",
+            "required": false
+          },
+          "startDate": {
+            "type": "string",
+            "id": "http://jsonschema.net/experience/0/startDate",
+            "required": false
+          },
+          "title": {
+            "type": "string",
+            "id": "http://jsonschema.net/experience/0/title",
+            "required": false
+          }
+        }
+      }
+    },
+    "objective": {
+      "type": "string",
+      "id": "http://jsonschema.net/objective",
+      "required": false
+    },
+    "proficiencies": {
+      "type": "array",
+      "id": "http://jsonschema.net/proficiencies",
+      "required": false,
+      "items": {
+        "type": "object",
+        "id": "http://jsonschema.net/proficiencies/0",
+        "required": false,
+        "properties": {
+          "favoriteActivities": {
+            "type": "array",
+            "id": "http://jsonschema.net/proficiencies/0/favoriteActivities",
+            "required": false,
+            "items": {
+              "type": "string",
+              "id": "http://jsonschema.net/proficiencies/0/favoriteActivities/0",
+              "required": false
+            }
+          },
+          "level": {
+            "type": "string",
+            "id": "http://jsonschema.net/proficiencies/0/level",
+            "required": false
+          },
+          "skillName": {
+            "type": "array",
+            "id": "http://jsonschema.net/proficiencies/0/skillName",
+            "required": false,
+            "items": {
+              "type": "string",
+              "id": "http://jsonschema.net/proficiencies/0/skillName/0",
+              "required": false
+            }
+          },
+          "yearsOfExperience": {
+            "type": "number",
+            "id": "http://jsonschema.net/proficiencies/0/yearsOfExperience",
+            "required": false
+          }
+        }
+      }
+    }
+  }
+}
