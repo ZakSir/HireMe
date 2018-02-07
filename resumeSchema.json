@@ -7,22 +7,22 @@
     "candidate": {
       "type": "object",
       "id": "http://jsonschema.net/candidate",
-      "required": false,
+      "required": true,
       "properties": {
         "address": {
           "type": "string",
           "id": "http://jsonschema.net/candidate/address",
-          "required": false
+          "required": true
         },
         "email": {
           "type": "string",
           "id": "http://jsonschema.net/candidate/email",
-          "required": false
+          "required": true
         },
         "fullName": {
           "type": "string",
           "id": "http://jsonschema.net/candidate/fullName",
-          "required": false
+          "required": true
         }
       }
     },
@@ -46,7 +46,7 @@
     "experience": {
       "type": "array",
       "id": "http://jsonschema.net/experience",
-      "required": false,
+      "required": true,
       "items": {
         "type": "object",
         "id": "http://jsonschema.net/experience/0",
@@ -55,7 +55,7 @@
           "dutiesAndAccomplishments": {
             "type": "array",
             "id": "http://jsonschema.net/experience/0/dutiesAndAccomplishments",
-            "required": false,
+            "required": true,
             "items": {
               "type": "string",
               "id": "http://jsonschema.net/experience/0/dutiesAndAccomplishments/0",
@@ -65,22 +65,22 @@
           "endDate": {
             "type": "string",
             "id": "http://jsonschema.net/experience/0/endDate",
-            "required": false
+            "required": true
           },
           "startDate": {
             "type": "string",
             "id": "http://jsonschema.net/experience/0/startDate",
-            "required": false
+            "required": true
           },
           "title": {
             "type": "string",
             "id": "http://jsonschema.net/experience/0/title",
-            "required": false
+            "required": true
           },          
           "team": {
             "type": "string",
             "id": "http://jsonschema.net/experience/0/team",
-            "required": false
+            "required": true
           }
         }
       }
