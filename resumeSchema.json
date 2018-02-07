@@ -81,6 +81,11 @@
             "type": "string",
             "id": "http://jsonschema.net/experience/0/team",
             "required": true
+          },          
+          "company": {
+            "type": "string",
+            "id": "http://jsonschema.net/experience/0/company",
+            "required": true
           }
         }
       }
