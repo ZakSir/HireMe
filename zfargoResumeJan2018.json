@@ -3,7 +3,13 @@
   "candidate": {
     "fullName": "Zak Fargo",
     "address": "1300 South Puget Drive | #119 | Renton, WA 98296",
-    "email": "hirezakfargo@gmail.com"
+    "email": "hirezakfargo@gmail.com",
+    "hobbies": [
+      "Welding (GMAW, GTAW)",
+      "Borosiicate Glassblowing",
+      "Piano",
+      "Winning"
+    ]
   },
   "objective": "Working on a fast-paced, challenging team to push the boundaries of the cloud world to its limits, and put a harness on the chaos. I hope to help deliver the dream of ambient intelligence to the world. ",
   "proficiencies": [
