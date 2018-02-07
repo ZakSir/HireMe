@@ -23,6 +23,16 @@
           "type": "string",
           "id": "http://jsonschema.net/candidate/fullName",
           "required": true
+        },
+        "hobbies": {
+          "type": "array",
+          "id": "http://jsonschema.net/candidate/hobbies",
+          "required": true,
+          "items": {
+            "type": "string",
+            "id": "http://jsonschema.net/candidate/hobbies/0",
+            "required": false
+          }
         }
       }
     },
