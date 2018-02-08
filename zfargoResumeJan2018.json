@@ -56,7 +56,7 @@
         "Created custom MediaWiki private deployment, with minimal maintenance and high automation, eliminating legacy documentation systems and headcount.",
         "Reduced headcount with self-service automation engine.",
         "Drove DevOps culture across organization, increasing resiliency of live site products.",
-        "Created self Service team engagement application, eliminating the need for engineering hours.",
+        "Created self-service team engagement application, eliminating the need for engineering hours.",
         "Developed rapid solutions using Azure to enable GTM strategies to be piloted quickly."
       ]     
     },
@@ -67,7 +67,7 @@
       "startDate": "2014-04-28T09:00:00-08:00",
       "endDate": "2015-04-24T17:00:00-08:00",
       "dutiesAndAccomplishments": [
-        "Implemented RSS Feed SEO system for massive offers database.",
+        "Implemented RSS feed SEO system for massive offers database.",
         "Created internal API platform to allow Bing Search to deeply learn about offers.",
         "Implemented design changes to Bing offers site to improve look and feel.",
         "Implemented custom automated deployment for azure from Team Foundation XAML build system.",
