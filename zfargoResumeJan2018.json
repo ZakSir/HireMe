@@ -1,4 +1,4 @@
-﻿{
+﻿{ 
   "$schema": "https://raw.githubusercontent.com/ZakSir/HireMe/master/resumeSchema.json",
   "candidate": {
     "fullName": "Zak Fargo",
@@ -11,7 +11,7 @@
       "Winning"
     ]
   },
-  "objective": "Working on a fast-paced, challenging team to push the boundaries of the cloud world to its limits and put a harness on the chaos. I hope to help deliver the dream of ambient intelligence to the world. ",
+  "objective": "Working on a fast-paced, challenging team to push the boundaries of the cloud world to its limits. I hope to help deliver the dream of ambient intelligence to the world. ",
   "proficiencies": [
     {
       "skillName": [ "csharp" ],
