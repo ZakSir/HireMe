@@ -6,12 +6,12 @@
     "email": "hirezakfargo@gmail.com",
     "hobbies": [
       "Welding (GMAW, GTAW)",
-      "Borosiicate Glassblowing",
+      "Borosilicate Flameworking",
       "Piano",
       "Winning"
-       ]
+    ]
   },
-  "objective": "Working on a fast-paced, challenging team to push the boundaries of the cloud world to its limits, and put a harness on the chaos. I hope to help deliver the dream of ambient intelligence to the world. ",
+  "objective": "Working on a fast-paced, challenging team to push the boundaries of the cloud world to its limits and put a harness on the chaos. I hope to help deliver the dream of ambient intelligence to the world. ",
   "proficiencies": [
     {
       "skillName": [ "csharp" ],
@@ -27,7 +27,7 @@
     },
     {
       "skillName": [ "UX : XAML / WPF" ],
-      "level" : "journeyman",
+      "level": "journeyman",
       "yearsOfExperience" : 3,
       "favoriteActivities": [ "Ergonomic Design", "Delight moments", "Consistency" ]
     },
@@ -35,7 +35,7 @@
       "skillName": [ "Html5", "CSS3", "Javascript", "TypeScript"],
       "level": "journeyman",
       "yearsOfExperience": 5,
-      "favoriteActivities": [ "Single Page Appliations", "Api Design", "Performance" ]
+      "favoriteActivities": [ "Single Page Applications", "Api Design", "Performance" ]
     },
     {
       "skillName": [ "Azure", "Windows Azure" ],
@@ -53,26 +53,26 @@
       "endDate": null,
       "dutiesAndAccomplishments": [
         "Designed end to end business automation solutions.",
-        "Created custom MediaWiki private deployment, with low maintenance and high automation, eliminating legacy documentation systems and headcount.",
+        "Created custom MediaWiki private deployment, with minimal maintenance and high automation, eliminating legacy documentation systems and headcount.",
         "Reduced headcount with self-service automation engine.",
         "Drove DevOps culture across organization, increasing resiliency of live site products.",
-        "Created self Service team engagement application, elminating the need for engineering hours.",
+        "Created self Service team engagement application, eliminating the need for engineering hours.",
         "Developed rapid solutions using Azure to enable GTM strategies to be piloted quickly."
       ]     
     },
     {
-      "company" : "Microsoft",
+      "company": "Microsoft",
       "title": "Software Engineer I",
       "team": "Bing Offers",
       "startDate": "2014-04-28T09:00:00-08:00",
       "endDate": "2015-04-24T17:00:00-08:00",
       "dutiesAndAccomplishments": [
         "Implemented RSS Feed SEO system for massive offers database.",
-        "Created internal Apis to allow Bing Search to deeply learn about offers.",
-        "Implemented Design changes to Bing offers site to improve look and feel.",
-        "Implemented custom automated deployment for azure from tfs xaml build system.",
-        "Built MSTest drivable harness for CasperJs. Allowing Per-Test visibility for rapid development.",
-        "Developed and optimized builds reducing build times by 80%."
+        "Created internal API platform to allow Bing Search to deeply learn about offers.",
+        "Implemented design changes to Bing offers site to improve look and feel.",
+        "Implemented custom automated deployment for azure from Team Foundation XAML build system.",
+        "Built MSTest drivable harness for CasperJs. Allowing per-test visibility for rapid development.",
+        "Developed and optimized custom builds reducing build times by 80%."
       ]
     },
     {
@@ -83,15 +83,15 @@
       "startDate": "2011-07-05T09:00:00-08:00",
       "endDate": "2013-04-18T17:00:00-08:00",
       "dutiesAndAccomplishments": [
-        "Provided Tier 3 Break Fix support for Enterprise Exchange Deployments.",
-        "Researched and provided technical documentation for Exchange Troubleshooting.",
+        "Provided Tier 3 break-fix support for Enterprise Exchange Deployments.",
+        "Researched and provided technical documentation for Exchange troubleshooting.",
         "Developed database interface software in XAML and C# used by entire operations organization.",
-        "Deployed several database interoperability applications using the WCF framework and SQL.",
-        "Created and delivered technical use training to end users of Line of Business applications.", 
-        "Created a Multi-Database ticket tracking and creation system using XAML, SQL, WCF, C# and ASP.NET.",
-        "Created portals to allow cross team collaboration and tracking with custom Database system.",
+        "Deployed several database interoperability applications using the WCF framework and Microsoft SQL.",
+        "Created and delivered technical use training to end users of line of business applications.", 
+        "Created a multi-database ticket tracking and creation system using XAML, SQL, WCF, C# and ASP.NET.",
+        "Created portals to allow cross team collaboration and tracking with custom database system.",
         "Worked to reduce headcount per seat resulting in substantial operating cost reductions.",  
-        "Deployed several Automation engines removing repetitive tasks from end users."
+        "Deployed several automation engines removing repetitive tasks from end users."
       ]
     },
     {
@@ -104,25 +104,25 @@
       "dutiesAndAccomplishments": [
         "Managed Major Incidents across the Microsoft Office 365 Environment.",
         "Worked to ensure SLA is met for all customers.",
-        "Responsible for communicating Incident Details to Microsoft Executives.",
-        "Worked with Operations teams to restore services during outages.",
-        "Managed Major incident progression for all Cloud services including Exchange, SharePoint, Lync and Live Meeting.",
+        "Responsible for communicating incident Details to Microsoft executives.",
+        "Worked with operations teams to restore services during outages.",
+        "Managed major incident progression for all cloud services including Exchange, SharePoint, Lync (now Teams) and Live Meeting.",
         "Responsible for beginning the problem management process for issues that slowed service restoration."
       ] 
     },
     {
       "company": "VMC Consulting",
       "title": "Tier II Support Engineer",
-      "team" : "Business Productivity Online Suite (Now Office 365)",
+      "team": "Business Productivity Online Suite (Now Office 365)",
       "startDate": "2010-01-01T09:00:00-08:00",
       "endDate": "2010-06-01T17:00:00-08:00",
       "dutiesAndAccomplishments": [
         "Worked with a team of over 70 agents to provide product support for the Microsoft Online Services platform.", 
-        "Troubleshot Microsoft Exchange Online, SharePoint Online, LiveMeeting Online and Office Communicator Online.", 
+        "Troubleshot Microsoft Exchange Online, SharePoint Online, LiveMeeting Online and Office Communicator Online (now Teams).", 
         "Created customer facing documentation personalized for each customer.", 
         "Troubleshot and fixed issues with customer configurations of software.", 
         "Delivered outstanding customer service to subscribers.", 
-        "Worked with Exchange Management Console and Blackberry Enterprise Manager.", 
+        "Worked with exchange management console and Blackberry Enterprise Manager.", 
         "Ensured issues were handled and met the SLA to customers.", 
         "Worked with customers to support setup and configuration of the Microsoft Online Services.", 
         "Provided support for issues ranging of DNS setup to complex co-existence and email migration issues.", 
