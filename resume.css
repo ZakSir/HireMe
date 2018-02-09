@@ -22,7 +22,16 @@ footer {
 @media (min-width: 600px)
 {
     header, article, footer {
-         max-width:600px;
+         max-width:570px;
+         margin-left: auto;
+         margin-right: auto;
+    }
+}
+
+@media (min-width: 900px)
+{
+    header, article, footer {
+         max-width:870px;
          margin-left: auto;
          margin-right: auto;
     }
