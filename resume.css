@@ -8,6 +8,11 @@ body {
     padding: 10px 40px;
 }
 
+.hljs
+{
+    white-space: pre-wrap;
+}
+
 @media (min-width: 600px)
 {
     header, article, footer {
