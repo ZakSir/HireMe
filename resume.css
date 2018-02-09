@@ -1,9 +1,16 @@
 body {
-    font-family: 'consolas';
+    font-family: 'consolas', 'Andale Mono', 'Courier', 'Courier New';
 }
 
 .title {
-    font-family: 'consolas';
+    font-family: 'consolas', 'Andale Mono', 'Courier', 'Courier New';
     font-size: 40pt;
     padding: 10px 40px;
+}
+
+@media (min-width: 600px)
+{
+    header, article, footer {
+         max-width:600px;
+    }
 }
