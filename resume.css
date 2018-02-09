@@ -1,0 +1,9 @@
+body {
+    font-family: 'consolas';
+}
+
+.title {
+    font-family: 'consolas';
+    font-size: 40pt;
+    padding: 10px 40px;
+}
