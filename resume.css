@@ -2,10 +2,16 @@ body {
     font-family: 'consolas', 'Andale Mono', 'Courier', 'Courier New';
 }
 
+footer {
+    font-size: 9pt;
+    padding: 10px;
+
+}
+
 .title {
     font-family: 'consolas', 'Andale Mono', 'Courier', 'Courier New';
     font-size: 40pt;
-    padding: 10px 40px;
+    padding: 10px 10px;
 }
 
 .hljs
