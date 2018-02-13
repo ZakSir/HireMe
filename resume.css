@@ -8,12 +8,27 @@ footer {
 
 }
 
-a, a:link, a:visited, a:active {
+a {
     color: rgb(255, 0, 234);
     text-decoration: none;
 }
+    
+a:link{
+    color: rgb(255, 0, 234);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(255, 0, 234);
+    text-decoration: none;
+} 
+    
+a:active {
+    color: rgb(255, 0, 234);
+    text-decoration: none;    
+}
 
 a:hover {
+    color: rgb(255, 0, 234);
     text-decoration: underline;
 }
 
