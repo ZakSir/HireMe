@@ -1,7 +1,3 @@
-// /////////////////////////////////// //
-// Bonus points, thanks for looking :) //
-// /////////////////////////////////// //
-
 function openRawFile(drilldown)
 {
     appInsights.trackEvent("drilldown", { page = drilldown });
