@@ -1,5 +1,5 @@
 function openRawFile(drilldown)
 {
-    appInsights.trackEvent("drilldown", { page: drilldown });
-    window.open("/resume/" + drilldown + "?commit=<!-- COMMITHERE -->", "_blank");
+    appInsights.trackEvent("drilldown", { page: drilldown, commit: '<!-- COMMITHERE -->' });
+    window.open("/resume/" + drilldown + "?commit=<!-- COMMITHERE -->", "_blank"); 
 }
