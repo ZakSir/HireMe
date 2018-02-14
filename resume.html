@@ -26,18 +26,12 @@
         </article>
         <footer>
             commit: <!-- COMMITHERE --><br />
-            download: <a onClick="openRawFile()" style="cursor: pointer;">resume.json</a>
+            download: <a onClick="openRawFile()" style="cursor: pointer;">resume.json</a><br />
+            word: 
         </footer>
+        <script src="/resume/resume.js"></script>
         <script language="javascript">
-            // /////////////////////////////////// //
-            // Bonus points, thanks for looking :) //
-            // /////////////////////////////////// //
 
-            function openRawFile()
-            {
-                appInsights.trackEvent("downloadResumeJson");
-                window.open("/resume/resume.json?commit=<!-- COMMITHERE -->", "_blank");
-            }
         </script>   
     </body>
 </html>
