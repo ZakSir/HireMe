@@ -112,10 +112,16 @@ a:hover {
     color: #999999;
 }
 
-#formatted-experience h3, #formatted-experience h4 {
+#formatted-experience h3 {
     font-size : 1.2em;
     margin-bottom: 5px;
 }
+
+#formatted-experience h4 {
+    font-size : 1.2em;
+    bottom: 5px 0;
+}
+
 
 p {
     margin: 0;
