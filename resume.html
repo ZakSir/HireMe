@@ -76,24 +76,29 @@
             <div id="formatted-experience-container">
                 <h2>Experience</h2>
                 <div id="formatted-experience" data-bind="foreach: experience">
-                    <h3 class="formatted-company-name">
-                        <span class="formatted-company-name-primary" data-bind="text: company"></span>
-                        <span class="decoration formatted-company-name-contractor-at-decoration" data-bind="if: contractorToVisible"> @ </span>
-                        <span class="formatted-company-name-contractor-to" data-bind="text: contractorToText"></span>
-                    </h3>
-                    <p class="formatted-title-row">
-                        <span class="formatted-job-title" data-bind="text: title"></span>
-                    </p>
-                    <p class=formatted-date-row>
-                        <span class="formatted-job-start-date-month" data-bind="text: startDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-start-date-year" data-bind="text: startDate.year"></span>
-                        <span class="decoration formatted-job-title-date-range-seperator"> - </span>
-                        <span data-bind="ifnot: endDate === null ">
-                            <span class="formatted-job-end-date-month" data-bind="text: endDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-end-date-year" data-bind="text: endDate.year"></span>
-                        </span>
-                        <span class="current-job" data-bind="if: endDate === null ">
-                            Current
-                        </span>
-                    </p>
+                    <div class="formatted-company-header">
+                        <h3 class="formatted-company-name">
+                            <span class="formatted-company-name-primary" data-bind="text: company"></span>
+                            <span class="decoration formatted-company-name-contractor-at-decoration" data-bind="if: contractorToVisible"> @ </span>
+                            <span class="formatted-company-name-contractor-to" data-bind="text: contractorToText"></span>
+                        </h3>
+                    </div>
+                    <div class="formatted-title-and-date-container">
+                        <p class="formatted-title-row">
+                            <span class="formatted-job-title" data-bind="text: title"></span>
+                        </p>
+                        <p class=formatted-date-row>
+                            <span class="formatted-job-start-date-month" data-bind="text: startDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-start-date-year" data-bind="text: startDate.year"></span>
+                            <span class="decoration formatted-job-title-date-range-seperator"> - </span>
+                            <span data-bind="ifnot: endDate === null ">
+                                <span class="formatted-job-end-date-month" data-bind="text: endDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-end-date-year" data-bind="text: endDate.year"></span>
+                            </span>
+                            <span class="current-job" data-bind="if: endDate === null ">
+                                Current
+                            </span>
+                        </p>
+                    </div>
+
                     <p class="formatted-accomplishments">
                         <h4>Accomplishments</h4>
                         <ul>
