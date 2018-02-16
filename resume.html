@@ -42,8 +42,23 @@
                 </div>
                 <div id="formatted-skills" class="skills" data-bind="foreach: proficiencies">
                     <h3 data-bind="text: firstSkill; "></h3>
-                    <p class="formatted-skill-list" data-bind="foreach: skillName"></span><span data-bind="text: $data"></span><span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">,</span></span></p>
+                    <p class="formatted-skill-list" data-bind="foreach: skillName">
+                        <span data-bind="text: $data"></span>
+                        <span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">, </span>
+                    </p>
+                    <p class="formatted-skill-level">
+                        <span class="formatted-skill-level-decorator-level">level: </span>
+                        <span class="formatted-skill-level-name" data-bind="text: level"></span>
+                        <span class="formatted-skill-at" > @ </span>
+                        <span data-bind="text: yearsOfExperience"></span>
+                        <span class="formatted-skill-decoration-years"> years</span>
+                    </p>
+                    <p class="formatted-skill-favorites" data-bind="foreach: favoriteActivities">
+                        <span data-bind="text: $data"></span>
+                        <span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">, </span>
+                    </p>
                 </div>
+                
             </div>
         </article>
         <footer>
