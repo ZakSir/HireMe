@@ -42,7 +42,7 @@
                 </div>
                 <div id="formatted-skills" class="skills" data-bind="foreach: proficiencies">
                     <h3 data-bind="text: firstSkill; "></h3>
-                    <p class="formatted-skill-list" data-bind="foreach: skillName"><span data-bind="text: $data"></span><span data-bind="if: $parent.skillName.length == $index -1">,</span></span></p>
+                    <p class="formatted-skill-list" data-bind="foreach: skillName"><span data-bind="text: $data"></span><span data-bind="if: $parent.skillName.length == ($index - 1)">asdf</span></span></p>
                 </div>
             </div>
         </article>
