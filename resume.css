@@ -151,7 +151,7 @@ p {
 }
 
 .formatted-title-row, .formatted-date-row {
-    margin :0;
+    padding :0;
     font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
     font-weight :normal;
 }
