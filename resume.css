@@ -205,6 +205,10 @@ h1, h2 {
     padding: 0 10px;
 }
 
+#formatted-experience-header {
+    border-bottom:none;
+}
+
 @media (min-width: 600px)
 {
     header, article, footer {
