@@ -140,6 +140,10 @@ p {
     display:none;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'HelveticaNeue', 'Helvetica Neue';
+}
+
 @media (min-width: 600px)
 {
     header, article, footer {
