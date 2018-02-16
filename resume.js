@@ -20,4 +20,10 @@ var rawdata = '<!-- JSONINJSHERE -->';
 var data = JSON.parse(rawdata);
 data.candidate.emailhref = "mailto:" + data.candidate.email;
 
+var i;
+for(i=0;i<data.proficiencies.length; i++)
+{
+    data.proficiencies[i].firstSkill = data.proficiencies[i].skillName[0];
+}
+
 ko.applyBindings(data); 
