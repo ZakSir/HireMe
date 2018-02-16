@@ -50,7 +50,13 @@ for(i=0;i<data.experience.length; i++)
     }, data);
     
     data.experience[i].contractorToText = ko.pureComputed(function() {
-        return data.experience[i].contractorTo !== "" ? data.experience[i].contractorTo : "";
+        if(typeof data.experience[i].contractorTo === 'undefined')
+        {
+            return "";
+        }
+        else{
+            return data.experience[i].contractorTo;
+        }
     }, data);
 }
 
