@@ -238,7 +238,11 @@ h1, h2 {
     }
 
     .section-header {
-        margin: 10px -40px 5px -40px;
+        margin: 40px -40px 5px -40px;
         padding: 0 20px;
+    }
+
+    #formatted-candidate-name {
+        margin-top:0px;
     }
 }
