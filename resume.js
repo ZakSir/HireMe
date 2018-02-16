@@ -24,6 +24,7 @@ data.candidate.emailhref = "mailto:" + data.candidate.email;
 data.visiblePage = ko.observable(0);
 
 
+
 data.showJson = function() {
     data.visiblePage(0);
 }
@@ -36,6 +37,17 @@ var i;
 for(i=0;i<data.proficiencies.length; i++)
 {
     data.proficiencies[i].firstSkill = data.proficiencies[i].skillName[0];
+}
+
+for(i=0;i<data.experience.length; i++)
+{
+    data.experience[i].contractorToVisible = ko.pureComputed(function() {
+        return data.contractorTo !== "";
+    }, data);
+    
+    data.experience[i].contractorToText = ko.pureComputed(function() {
+        return data.contractorTo !== "" ? data.contractorTo : "";
+    }, data);
 }
 
 ko.applyBindings(data); 
