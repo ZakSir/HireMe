@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <title>Hire Zak Fargo - Resume.Json</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
@@ -77,11 +77,9 @@
                 <h2>Experience</h2>
                 <div id="formatted-experience" data-bind="foreach: experience">
                     <h3 class="formatted-company-name">
-
                         <span class="formatted-company-name-primary" data-bind="text: company"></span>
                         <span class="decoration formatted-company-name-contractor-at-decoration" data-bind="if: contractorToVisible"> @ </span>
                         <span class="formatted-company-name-contractor-to" data-bind="text: contractorToText"></span>
-
                     </h3>
                     <p class="formatted-title-row">
                         <span class="formatted-job-title" data-bind="text: title"></span>
@@ -101,9 +99,12 @@
                     </p>
                     <p class="formatted-accomplishments">
                         <h4>Accomplishments</h4>
-                        <ul data-bind="foreach: dutiesAndAccomplishments">
+                        <ul>
+                        <!-- ko foreach: dutiesAndAccomplishments -->
                             <li data-bind="text: $data"></li>
-                        </ul>
+                        <!-- /ko -->
+                    </ul>
+                        
                     </p>
                 </div>
             </div>
