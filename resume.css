@@ -131,10 +131,6 @@ p {
     padding  : 5px 0;
 }
 
-#formatted-candidate-name {
-    margin: 0px 0px 5px 0px;
-}
-
 #formatted-candidate-name-given-name { 
     font-family: 'HelveticaNeue-Thin', 'Helvetica Neue Thin', 'Segoe UI Light';
     font-weight: normal;
