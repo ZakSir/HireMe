@@ -16,10 +16,13 @@ function openRawGitHubFile(fileName)
     window.open("https://raw.githubusercontent.com/ZakSir/HireMe/<!-- COMMITHERE -->/" + fileName);
 }
 
+console.log("Working against commit <!-- COMMITHERE -->");
+
 var rawdata = '<!-- JSONINJSHERE -->';
 var data = JSON.parse(rawdata);
 data.candidate.emailhref = "mailto:" + data.candidate.email;
 data.visiblePage = ko.observable(0);
+
 
 data.showJson = function() {
     data.visiblePage(0);
