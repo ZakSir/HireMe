@@ -105,9 +105,12 @@ a:hover {
 
 #formatted-skills p
 {
-padding :0;
+    padding :0;
 } 
 
+.formatted-skills-container {
+    color: #777777;
+}
 
 #formatted-experience h3, #formatted-experience h4 {
     font-size : 1.2em;
