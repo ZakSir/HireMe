@@ -272,7 +272,7 @@ h1, h2 {
     }
 
     .formatted-date-row {
-        color: black;
+        color: black !important;
     }
     
     .formatted-company-header
