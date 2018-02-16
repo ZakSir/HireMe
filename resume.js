@@ -42,7 +42,7 @@ for(i=0;i<data.proficiencies.length; i++)
 for(i=0;i<data.experience.length; i++)
 {
     data.experience[i].contractorToVisible = ko.pureComputed(function() {
-        var result =  (typeof data.contractorTo != 'undefined');
+        var result =  (typeof data.experience[i].contractorTo != 'undefined');
 
         console.log(result);
 
@@ -50,7 +50,7 @@ for(i=0;i<data.experience.length; i++)
     }, data);
     
     data.experience[i].contractorToText = ko.pureComputed(function() {
-        return data.contractorTo !== "" ? data.contractorTo : "";
+        return data.experience[i].contractorTo !== "" ? data.experience[i].contractorTo : "";
     }, data);
 }
 
