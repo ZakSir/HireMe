@@ -49,7 +49,7 @@ a:hover {
 
 #tabbed-container {
     display: block;
-    border: 1px solid black;
+    
 }
 
 #json-label {
@@ -64,6 +64,10 @@ a:hover {
 
 .in-use-format {
     background-color: #CCCCFF;
+}
+
+.resume-container {
+    border: 1px solid black;
 }
 
 @media (min-width: 600px)
