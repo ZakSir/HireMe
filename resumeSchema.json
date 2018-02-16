@@ -9,7 +9,7 @@
       "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate",
       "required": true,
       "properties": {
-        "address": {
+        "location": {
           "type": "string",
           "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/address",
           "required": true

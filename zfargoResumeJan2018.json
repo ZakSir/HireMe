@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/ZakSir/HireMe/master/resumeSchema.json",
   "candidate": {
     "fullName": "Zak Fargo",
-    "address": "1300 South Puget Drive | #119 | Renton, WA 98296",
+    "location": "Renton, Washington",
     "email": "hirezakfargo@gmail.com",
     "hobbies": [
       "Welding (GMAW, GTAW)",
