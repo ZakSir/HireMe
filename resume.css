@@ -95,6 +95,11 @@ a:hover {
     margin-bottom: 5px; /* grid = 5 */
 }
 
+p {
+    margin: 0;
+    padding  : 5px;
+}
+
 @media (min-width: 600px)
 {
     header, article, footer {
