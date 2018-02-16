@@ -161,6 +161,38 @@ p {
     color: #999999;
 }
 
+.formatted-company-header
+{
+    background-color: #0099FF;
+    margin: 0 -10px;
+    padding: 0 10px;
+}
+
+.formatted-company-name 
+{
+    line-height: 80px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.formatted-title-and-date-alignment-container 
+{
+    line-height: 80px;
+    float: right;
+    height: 80px;
+    display:inline-block;
+}
+
+.formatted-title-and-date-container
+{
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    color: white;
+}
+
 h3, h4 {
     font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
     font-weight :normal;
