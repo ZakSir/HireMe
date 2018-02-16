@@ -70,7 +70,13 @@
                         <span class="decoration formatted-job-title-date-range-seperator"> | </span>
                         <span class="formatted-job-start-date-month" data-bind="text: startDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-start-date-year" data-bind="text: startDate.year"></span>
                         <span class="decoration formatted-job-title-date-range-seperator"> - </span>
+                        <span data-bind="ifnot: endDate === null ">
                         <span class="formatted-job-end-date-month" data-bind="text: endDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-end-date-year" data-bind="text: endDate.year"></span>
+                        </span>
+                        <span data-bind="if: endDate === null ">
+                            Current
+                        </span>
+                    
                     </p>
                     <p class="formatted-accomplishments">
                         <ul data-bind="foreach: dutiesAndAccomplishments">
