@@ -42,16 +42,12 @@ for(i=0;i<data.proficiencies.length; i++)
 for(i=0;i<data.experience.length; i++)
 {
     data.experience[i].contractorToVisible = ko.computed(function() {
-        console.log("enter contractorToVisible");
         var result =  (typeof data.experience[i].contractorTo != 'undefined');
-
-        console.log(result);
 
         return result;
     }, data);
     
     data.experience[i].contractorToText = ko.computed(function() {
-        console.log("enter contractortotext");
         if(typeof data.experience[i].contractorTo === 'undefined')
         {
             return "";
