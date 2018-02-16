@@ -152,6 +152,8 @@ p {
 
 .formatted-title-row, .formatted-date-row {
     margin :0;
+    font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
+    font-weight :normal;
 }
 
 h3, h4 {
