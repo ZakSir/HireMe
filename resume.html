@@ -78,7 +78,7 @@
                         <h3 class="formatted-company-name">
                             
                             <span class="formatted-company-name-primary" data-bind="text: company"></span>
-                            <span data-bind="if: function() { return $data.contractorTo != null }">
+                            <span data-bind="ifnot: function() { return $data.contractorTo != null }">
                                 <span class="decoration formatted-company-name-contractor-at-decoration"> @ </span>
                                 <span class="formatted-company-name-contractor-to" data-bind="text: contractorTo"></span>'
                             </span> 
