@@ -16,7 +16,7 @@
   "proficiencies": [
     {
       "skillName": [ "csharp" ],
-      "level": "expert",
+      "level": "master",
       "yearsOfExperience": 7,
       "favoriteActivities": [ "library code", "refactoring", "automation", "deployment" ]
     },
