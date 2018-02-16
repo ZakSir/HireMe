@@ -283,7 +283,7 @@ h1, h2 {
         border: none;
     }
 
-    .formatted-date-row {
+    .formatted-date-row, .formatted-title-row {
         color: black !important;
     }
     
