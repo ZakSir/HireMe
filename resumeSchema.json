@@ -11,12 +11,17 @@
       "properties": {
         "location": {
           "type": "string",
-          "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/address",
+          "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/location",
           "required": true
         },
         "email": {
           "type": "string",
           "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/email",
+          "required": true
+        },
+        "phone": {
+          "type": "number",
+          "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/phone",
           "required": true
         },
         "fullName": {
