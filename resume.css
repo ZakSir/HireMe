@@ -127,12 +127,12 @@ p {
 }
 
 #formatted-candidate-name-given-name { 
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Thin';
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Thin', 'Segoe UI Light';
     font-weight: normal;
 }
 
 #formatted-candidate-name-sur-name {
-    font-family: 'HelveticaNeue-Medium','Helvetica Neue Medium';
+    font-family: 'HelveticaNeue-Medium','Helvetica Neue Medium', 'Segoe UI';
     font-weight: normal;
 }
 
