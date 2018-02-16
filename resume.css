@@ -64,6 +64,9 @@ a:hover {
 
 .in-use-format {
     background-color: #CCCCFF;
+    border-left: #4444CC;
+    border-top: #4444CC;
+    border-right: #4444CC;
 }
 
 .resume-container { 
@@ -72,6 +75,13 @@ a:hover {
 
 .prettyprint {
     margin: 0 !important;
+}
+
+.format-label
+{
+    border-left: #8888FF;
+    border-top: #8888FF;
+    border-right: #8888FF;
 }
 
 @media (min-width: 600px)
