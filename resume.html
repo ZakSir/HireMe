@@ -79,7 +79,7 @@
                             
                             <span class="formatted-company-name-primary" data-bind="text: company"></span>
                             
-                               <span class="decoration formatted-company-name-contractor-at-decoration" data-bind="if: $data.contractorTo != ''"> @ </span>
+                               <span class="decoration formatted-company-name-contractor-at-decoration" data-bind="text: function() { return $data.contractorTo != '' ? 'foo' : 'bar' }"> @ </span>
                                 <span class="formatted-company-name-contractor-to" data-bind="text: $data.contractorTo"></span>
                        
                         </h3>
