@@ -40,8 +40,8 @@
                     <h2>Objective</h2>
                     <p data-bind="text: objective"></p>
                 </div>
-                <div id="formatted-skills" class="skills" data-bind="template: { name: 'skill-template', data: proficiencies }">
-                    
+                <div id="formatted-skills" class="skills" data-bind="foreach: proficiencies">
+                    a
                 </div>
             </div>
         </article>
@@ -52,10 +52,6 @@
             pdf: <a onClick="openRawGitHubFile('resume.pdf')" style="cursor: pointer;">resume.pdf</a><br />
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
-        
-        <script type="text/html" id="skill-template">
-            <h3 data-bind="text: skillName"></h3>
-        </script>
 
         <script src="/resume/resume.js?commit=<!-- COMMITHERE -->"></script>
     </body> 
