@@ -57,12 +57,11 @@
             <div id="formatted-skills-container">
                 <h2>Skills</h2>
                 <div id="formatted-skills" class="skills" data-bind="foreach: proficiencies">
-                    <h3 data-bind="text: firstSkill; "></h3>
-                    <div class="formatted-skills-container" data-bind="ifnot: skillName.length < 2">
-                        <p class="formatted-skill-list" data-bind="foreach: skillName">
-                            <span class="formatted-skill-name" data-bind="text: $data"></span><span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">, </span>
-                        </p>
-                    </div>
+                    <h3>
+                        <span class="formatted-skills-first-skill-name" data-bind="text: firstSkill; "></span>
+                    <span class="formatted-skills-container" data-bind="ifnot: skillName.length < 2">(<span class="formatted-skill-list" data-bind="foreach: skillName"><span class="formatted-skill-name" data-bind="text: $data"></span><span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">, </span></span>
+                    </span>
+                </h3>
                     <p class="formatted-skill-level">
                         <span class="formatted-skill-level-decorator-level">level: </span>
                         <span class="formatted-skill-level-name" data-bind="text: level"></span>
