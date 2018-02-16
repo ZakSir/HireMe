@@ -49,53 +49,59 @@
                     <h2>Objective</h2>
                     <p data-bind="text: objective"></p>
                 </div>
-                <div id="formatted-skills" class="skills" data-bind="foreach: proficiencies">
-                    <h3 data-bind="text: firstSkill; "></h3>
-                    <div data-bind="ifnot: skillName.length < 2">
-                        <p class="formatted-skill-list" data-bind="foreach: skillName">
-                            
-                            <span class="formatted-skill-name" data-bind="text: $data"></span><span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">, </span>
-                            </span>
+                <div id="formatted-skills-container">
+                    <h2>Skills</h2>
+                    <div id="formatted-skills" class="skills" data-bind="foreach: proficiencies">
+                        <h3 data-bind="text: firstSkill; "></h3>
+                        <div data-bind="ifnot: skillName.length < 2">
+                            <p class="formatted-skill-list" data-bind="foreach: skillName">
+                                
+                                <span class="formatted-skill-name" data-bind="text: $data"></span><span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">, </span>
+                                </span>
+                            </p>
+                        </div>
+                        <p class="formatted-skill-level">
+                            <span class="formatted-skill-level-decorator-level">level: </span>
+                            <span class="formatted-skill-level-name" data-bind="text: level"></span>
+                            <span class="formatted-skill-at" > @ </span>
+                            <span data-bind="text: yearsOfExperience"></span>
+                            <span class="formatted-skill-decoration-years"> years</span>
+                        </p>
+                        <p class="formatted-skill-favorites" data-bind="foreach: favoriteActivities">
+                            <span data-bind="text: $data"></span><span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">, </span>
                         </p>
                     </div>
-                    <p class="formatted-skill-level">
-                        <span class="formatted-skill-level-decorator-level">level: </span>
-                        <span class="formatted-skill-level-name" data-bind="text: level"></span>
-                        <span class="formatted-skill-at" > @ </span>
-                        <span data-bind="text: yearsOfExperience"></span>
-                        <span class="formatted-skill-decoration-years"> years</span>
-                    </p>
-                    <p class="formatted-skill-favorites" data-bind="foreach: favoriteActivities">
-                        <span data-bind="text: $data"></span><span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">, </span>
-                    </p>
                 </div>
-                <div id="formatted-experience" data-bind="foreach: experience">
-                    <h3 class="formatted-company-name">
+                <div id="formatted-experience-container">
+                    <h2>Experience</h2>
+                    <div id="formatted-experience" data-bind="foreach: experience">
+                        <h3 class="formatted-company-name">
+                            
+                            <span class="formatted-company-name-primary" data-bind="text: company"></span>
+                            <span data-bind="ifnot: function() { return $data.contractorTo === '' }">
+                                <span class="decoration formatted-company-name-contractor-at-decoration"> @ </span>
+                                <span class="formatted-company-name-contractor-to" data-bind="text: contractorTo"></span>'
+                            </span> 
+                        </h3>
+                        <p class="formatted-title-row">
+                            <span class="formatted-job-title" data-bind="text: title"></span>
+                            <span class="decoration formatted-job-title-date-range-seperator"> | </span>
+                            <span class="formatted-job-start-date-month" data-bind="text: startDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-start-date-year" data-bind="text: startDate.year"></span>
+                            <span class="decoration formatted-job-title-date-range-seperator"> - </span>
+                            <span data-bind="ifnot: endDate === null ">
+                            <span class="formatted-job-end-date-month" data-bind="text: endDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-end-date-year" data-bind="text: endDate.year"></span>
+                            </span>
+                            <span data-bind="if: endDate === null ">
+                                Current
+                            </span>
                         
-                        <span class="formatted-company-name-primary" data-bind="text: company"></span>
-                        <span data-bind="ifnot: function() { return $data.contractorTo === '' }">
-                            <span class="decoration formatted-company-name-contractor-at-decoration"> @ </span>
-                            <span class="formatted-company-name-contractor-to" data-bind="text: contractorTo"></span>'
-                        </span> 
-                    </h3>
-                    <p class="formatted-title-row">
-                        <span class="formatted-job-title" data-bind="text: title"></span>
-                        <span class="decoration formatted-job-title-date-range-seperator"> | </span>
-                        <span class="formatted-job-start-date-month" data-bind="text: startDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-start-date-year" data-bind="text: startDate.year"></span>
-                        <span class="decoration formatted-job-title-date-range-seperator"> - </span>
-                        <span data-bind="ifnot: endDate === null ">
-                        <span class="formatted-job-end-date-month" data-bind="text: endDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-end-date-year" data-bind="text: endDate.year"></span>
-                        </span>
-                        <span data-bind="if: endDate === null ">
-                            Current
-                        </span>
-                    
-                    </p>
-                    <p class="formatted-accomplishments">
-                        <ul data-bind="foreach: dutiesAndAccomplishments">
-                            <li data-bind="text: $data"></li>
-                        </ul>
-                    </p>
+                        </p>
+                        <p class="formatted-accomplishments">
+                            <ul data-bind="foreach: dutiesAndAccomplishments">
+                                <li data-bind="text: $data"></li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
             </div>
         </article>
