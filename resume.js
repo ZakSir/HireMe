@@ -42,7 +42,11 @@ for(i=0;i<data.proficiencies.length; i++)
 for(i=0;i<data.experience.length; i++)
 {
     data.experience[i].contractorToVisible = ko.pureComputed(function() {
-        return data.contractorTo !== "";
+        var result =  (typeof data.contractorTo != 'undefined');
+
+        console.log(result);
+
+        return result;
     }, data);
     
     data.experience[i].contractorToText = ko.pureComputed(function() {
