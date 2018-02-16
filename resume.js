@@ -23,8 +23,6 @@ var data = JSON.parse(rawdata);
 data.candidate.emailhref = "mailto:" + data.candidate.email;
 data.visiblePage = ko.observable(1);
 
-
-
 data.showJson = function() {
     data.visiblePage(0);
 }
