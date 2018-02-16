@@ -15,7 +15,6 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
-
     <script>hljs.initHighlightingOnLoad();</script>
 
 </head>
@@ -59,10 +58,8 @@
                     <h3 data-bind="text: firstSkill; "></h3>
                     <div data-bind="ifnot: skillName.length < 2">
                         <p class="formatted-skill-list" data-bind="foreach: skillName">
-
                             <span class="formatted-skill-name" data-bind="text: $data"></span>
                             <span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">, </span>
-                            </span>
                         </p>
                     </div>
                     <p class="formatted-skill-level">
