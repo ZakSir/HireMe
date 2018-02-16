@@ -215,6 +215,10 @@ h1, h2 {
     page-break-inside: avoid;
 }
 
+.formatted-accomplishments {
+    page-break-inside: avoid;
+}
+
 #formatted-top #formatted-experience-header {
     border-bottom:none;
 }
