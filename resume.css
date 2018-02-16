@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'consolas', 'Andale Mono', 'Courier', 'Courier New';
 }
@@ -43,6 +47,20 @@ a:hover {
     white-space: pre-wrap;
 }
 
+#tabbed-container {
+    display: block;
+    border: 1px solid black;
+}
+
+#json-label {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#formatted-label {
+    display: inline-block;
+    border: 1px solid black;
+}
 
 
 @media (min-width: 600px)
