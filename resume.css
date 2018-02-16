@@ -302,5 +302,9 @@ h1, h2 {
         margin-top: 60px;
     }
 
+    #formatted-candidate-name {
+        margin-top:20px;
+    }
+
 
 }
