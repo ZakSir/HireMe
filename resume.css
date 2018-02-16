@@ -88,6 +88,8 @@ a:hover {
 
 #formatted-top {
     padding: 10px;
+    font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
+    font-weight :normal;
 }
 
 #formatted-top h2 {
