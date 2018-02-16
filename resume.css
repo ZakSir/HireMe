@@ -122,6 +122,10 @@ a:hover {
     margin: 5px 0;
 }
 
+.formatted-accomplishments li 
+{
+    font-size: 0.9em;
+}
 
 p {
     margin: 0;
