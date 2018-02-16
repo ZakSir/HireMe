@@ -138,13 +138,13 @@ p {
     display:none;
 }
 
-h1, h2 {
+h3, h4 {
     font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
     font-weight :normal;
 
 }
 
-h3, h4 {
+h1, h2 {
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Segoe UI Light';
     font-weight: normal;
 }
