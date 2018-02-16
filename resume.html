@@ -40,7 +40,7 @@
                     <h2>Objective</h2>
                     <p data-bind="text: objective"></p>
                 </div>
-                <div id="formatted-skills" class="skills" data-bind="template: { name: 'skill-template' }">
+                <div id="formatted-skills" class="skills" data-bind="template: { name: 'skill-template', data: candidate.proficiencies }">
                     
                 </div>
             </div>
