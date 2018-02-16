@@ -56,7 +56,28 @@
                         <span data-bind="text: $data"></span><span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">, </span>
                     </p>
                 </div>
-
+                <div id="formatted-experience" data-bind="foreach: experience">
+                    <h3 class="formatted-company-name">
+                        
+                        <span class="formatted-company-name-primary" data-bind="text: company"></span>
+                        <span data-bind="ifnot: contractorTo === ''">
+                            <span class="decoration formatted-company-name-contractor-at-decoration"> @ </span>
+                            <span class="formatted-company-name-contractor-to" data-bind="text: contractorTo"></span>'
+                        </span> 
+                    </h3>
+                    <p class="formatted-title-row">
+                        <span class="formatted-job-title" data-bind="text: title"></span>
+                        <span class="decoration formatted-job-title-date-range-seperator"> | </span>
+                        <span class="formatted-job-start-date-month" data-bind="text: startDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-start-date-year" data-bind="text: startDate.year"></span>
+                        <span class="decoration formatted-job-title-date-range-seperator"> - </span>
+                        <span class="formatted-job-end-date-month" data-bind="text: endDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-end-date-year" data-bind="text: endDate.year"></span>
+                    </p>
+                    <p class="formatted-accomplishments">
+                        <ul data-bind="foreach: dutiesAndAccomplishments">
+                            <li data-bind="text: $data"></li>
+                        </ul>
+                    </p>
+                </div>
             </div>
         </article>
         <footer>
