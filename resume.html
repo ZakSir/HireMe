@@ -60,7 +60,7 @@
                     <h3 class="formatted-company-name">
                         
                         <span class="formatted-company-name-primary" data-bind="text: company"></span>
-                        <span data-bind="ifnot: contractorTo === ''">
+                        <span data-bind="ifnot: function() { return $data.contractorTo === '' }">
                             <span class="decoration formatted-company-name-contractor-at-decoration"> @ </span>
                             <span class="formatted-company-name-contractor-to" data-bind="text: contractorTo"></span>'
                         </span> 
