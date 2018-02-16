@@ -1,7 +1,10 @@
 ﻿{ 
   "$schema": "https://raw.githubusercontent.com/ZakSir/HireMe/master/resumeSchema.json",
   "candidate": {
-    "fullName": "Zak Fargo",
+    "name": {
+      "givenName" :"Zak",
+      "surname": "Fargo"
+    },
     "location": "Renton, Washington",
     "email": "hirezakfargo@gmail.com",
     "phone": 4259496380,

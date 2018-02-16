@@ -24,10 +24,24 @@
           "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/phone",
           "required": true
         },
-        "fullName": {
-          "type": "string",
-          "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/fullName",
-          "required": true
+        "name": {
+          "type": "object",
+          "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/name",
+          "required": true,
+          "properties": {
+            "givenName" : {
+              "type": "string",
+              "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/name/givenName",
+              "required": true,
+              "description": "The given name of the candidate"
+            },
+            "surname" : {
+              "type": "string",
+              "id" : "https://hirezakfargo.azureedge.net/schema/resume/candidate/name/surname",
+              "required":true,
+              "description": "The surname (last name) of the candidate"
+            }
+          }
         },
         "hobbies": {
           "type": "array",

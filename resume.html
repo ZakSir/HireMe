@@ -39,7 +39,9 @@
         </div>
         <div id="formatted-top" class="resume-container" style="display: none;" data-bind="visible : visiblePage() === 1">
             <div id="formatted-name">
-                <h2 id="formatted-candidate-name" data-bind="text: candidate.fullName"></h2>
+                <h2 id="formatted-candidate-name">
+                    <span id="formatted-candidate-name-given-name" data-bind="text: candidate.givenName"></span><span id="formatted-candidate-name-space">&nbsp;</span><span id="formatted-candidate-name-sur-name" data-bind="text: candidate.surname"></span>
+                </h2>
                 <p id="formatted-candidate-sub-info">
                     <span id="formatted-candidate-location" data-bind="text: candidate.location"></span>
                     <span class="decoration"> | </span>
