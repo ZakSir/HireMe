@@ -15,3 +15,6 @@ function openRawGitHubFile(fileName)
     appInsights.trackEvent("githubraw", {commit: '<!-- COMMITHERE -->', fileName: fileName});
     window.open("https://raw.githubusercontent.com/ZakSir/HireMe/<!-- COMMITHERE -->/" + fileName);
 }
+
+var rawdata = '<!-- JSONINJSHERE -->';
+window.rawData = rawdata;
