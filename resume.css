@@ -54,14 +54,17 @@ a:hover {
 
 #json-label {
     display: inline-block;
-    border: 1px solid black;
+    padding: 5px;
 }
 
 #formatted-label {
     display: inline-block;
-    border: 1px solid black;
+    padding: 5px;   
 }
 
+.in-use-format {
+    background-color: #CCCCFF;
+}
 
 @media (min-width: 600px)
 {
