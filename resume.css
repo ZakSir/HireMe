@@ -154,6 +154,7 @@ p {
     padding :0;
     font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
     font-weight :normal;
+    text-align: right;
 }
 
 .formatted-date-row {
