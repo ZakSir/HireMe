@@ -105,6 +105,12 @@ a:hover {
     margin-bottom: 5px;
 }
 
+#formatted-skills > p
+{
+
+}
+
+
 #formatted-experience h3 {
     font-size : 1.5em;
     font-weight: bold;
