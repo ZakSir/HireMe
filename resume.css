@@ -229,16 +229,16 @@ h1, h2 {
 
     .formatted-company-header
     {
-        margin: 0 -20px;
-        padding: 0 20px;
+        margin: 0 -40px;
+        padding: 0 40px;
     }
 
     #formatted-top {
-        padding: 20px;
+        padding: 40px;
     }
 
     .section-header {
-        margin: 10px -20px 5px -20px;
+        margin: 10px -40px 5px -40px;
         padding: 0 20px;
     }
 }
