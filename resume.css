@@ -298,5 +298,9 @@ h1, h2 {
         color: black;
     }
 
+    .section-header {
+        margin-top: 60px;
+    }
+
 
 }
