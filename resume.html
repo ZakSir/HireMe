@@ -23,10 +23,20 @@
             <h1 class="title">resume.json</h1>
         </header>
         <article>
-            <div id="raw-json-top">
+            <div id="tabbed-container">
+                <div id="tabs">
+                    <div id="json-label" data-bind="css: { 'in-use-format': visiblePage() === 0 }, click: showJson">
+                        JSON
+                    </div>
+                    <div id="formatted-label" data-bind="css: { 'in-use-format': visiblePage() === 1 }, click: showHtml">
+                        Formatted
+                    </div>
+                </div>
+            </div>
+            <div id="raw-json-top" style="display: none;"  data-bind="visible: visiblePage() === 0">
                 <!-- DATAHERE -->
             </div>
-            <div id="formatted-top">
+            <div id="formatted-top" style="display: none;"  data-bind="visible : visiblePage() === 1">
                 <div id="formatted-name">
                     <h2 id="formatted-candidate-name" data-bind="text: candidate.fullName"></h2>
                     <p id="formatted-candidate-sub-info">

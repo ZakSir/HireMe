@@ -19,6 +19,15 @@ function openRawGitHubFile(fileName)
 var rawdata = '<!-- JSONINJSHERE -->';
 var data = JSON.parse(rawdata);
 data.candidate.emailhref = "mailto:" + data.candidate.email;
+data.visiblePage = ko.observable(0);
+
+data.showJson = function() {
+    data.visiblePage(0);
+}
+
+data.showHtml = function() {
+    data.visiblePage(1);
+}
 
 var i;
 for(i=0;i<data.proficiencies.length; i++)
