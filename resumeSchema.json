@@ -1,36 +1,36 @@
 ﻿{
   "type": "object",
   "$schema": "http://json-schema.org/draft-03/schema",
-  "id": "http://jsonschema.net",
+  "id": "https://hirezakfargo.azureedge.net/schema/resume",
   "required": false,
   "properties": {
     "candidate": {
       "type": "object",
-      "id": "http://jsonschema.net/candidate",
+      "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate",
       "required": true,
       "properties": {
         "address": {
           "type": "string",
-          "id": "http://jsonschema.net/candidate/address",
+          "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/address",
           "required": true
         },
         "email": {
           "type": "string",
-          "id": "http://jsonschema.net/candidate/email",
+          "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/email",
           "required": true
         },
         "fullName": {
           "type": "string",
-          "id": "http://jsonschema.net/candidate/fullName",
+          "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/fullName",
           "required": true
         },
         "hobbies": {
           "type": "array",
-          "id": "http://jsonschema.net/candidate/hobbies",
+          "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/hobbies",
           "required": true,
           "items": {
             "type": "string",
-            "id": "http://jsonschema.net/candidate/hobbies/0",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/candidate/hobbies/0",
             "required": false
           }
         }
@@ -38,68 +38,92 @@
     },
     "education": {
       "type": "object",
-      "id": "http://jsonschema.net/education",
+      "id": "https://hirezakfargo.azureedge.net/schema/resume/education",
       "required": false,
       "properties": {
         "degrees": {
           "type": "array",
-          "id": "http://jsonschema.net/education/degrees",
+          "id": "https://hirezakfargo.azureedge.net/schema/resume/education/degrees",
           "required": false
         },
         "highestDegreeObtained": {
           "type": "string",
-          "id": "http://jsonschema.net/education/highestDegreeObtained",
+          "id": "https://hirezakfargo.azureedge.net/schema/resume/education/highestDegreeObtained",
           "required": false
         }
       }
     },
     "experience": {
       "type": "array",
-      "id": "http://jsonschema.net/experience",
+      "id": "https://hirezakfargo.azureedge.net/schema/resume/experience",
       "required": true,
       "items": {
         "type": "object",
-        "id": "http://jsonschema.net/experience/0",
+        "id": "https://hirezakfargo.azureedge.net/schema/resume/experience/0",
         "required": false,
         "properties": {
           "dutiesAndAccomplishments": {
             "type": "array",
-            "id": "http://jsonschema.net/experience/0/dutiesAndAccomplishments",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/experience/0/dutiesAndAccomplishments",
             "required": true,
             "items": {
               "type": "string",
-              "id": "http://jsonschema.net/experience/0/dutiesAndAccomplishments/0",
+              "id": "https://hirezakfargo.azureedge.net/schema/resume/experience/0/dutiesAndAccomplishments/0",
               "required": false
             }
           },
           "endDate": {
-            "type": "string",
-            "id": "http://jsonschema.net/experience/0/endDate",
-            "required": true
+            "type": "object",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/experience/0/endDate",
+            "required": true,
+            "properties" : {
+              "year" : {
+                "type" : "number",
+                "id" : "https://hirezakfargo.azureedge.net/schema/resume/experience/0/endDate/year",
+                "required": true
+              },
+              "month" : {
+                "type" : "number",
+                "id" : "https://hirezakfargo.azureedge.net/schema/resume/experience/0/endDate/month",
+                "required": true
+              }
+            }
           },
           "startDate": {
-            "type": "string",
-            "id": "http://jsonschema.net/experience/0/startDate",
-            "required": true
+            "type": "object",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/experience/0/startDate",
+            "required": true,
+            "properties" : {
+              "year" : {
+                "type" : "number",
+                "id" : "https://hirezakfargo.azureedge.net/schema/resume/experience/0/startDate/year",
+                "required": true
+              },
+              "month" : {
+                "type" : "number",
+                "id" : "https://hirezakfargo.azureedge.net/schema/resume/experience/0/startDate/month",
+                "required": true
+              }
+            }
           },
           "title": {
             "type": "string",
-            "id": "http://jsonschema.net/experience/0/title",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/experience/0/title",
             "required": true
           },          
           "team": {
             "type": "string",
-            "id": "http://jsonschema.net/experience/0/team",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/experience/0/team",
             "required": true
           },          
           "company": {
             "type": "string",
-            "id": "http://jsonschema.net/experience/0/company",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/experience/0/company",
             "required": true
           },
           "contractorTo":{
             "type": "string",
-            "id": "http://jsonschema.net/experience/0/contractorTo",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/experience/0/contractorTo",
             "required" : false
           }
         }
@@ -107,46 +131,46 @@
     },
     "objective": {
       "type": "string",
-      "id": "http://jsonschema.net/objective",
+      "id": "https://hirezakfargo.azureedge.net/schema/resume/objective",
       "required": false
     },
     "proficiencies": {
       "type": "array",
-      "id": "http://jsonschema.net/proficiencies",
+      "id": "https://hirezakfargo.azureedge.net/schema/resume/proficiencies",
       "required": false,
       "items": {
         "type": "object",
-        "id": "http://jsonschema.net/proficiencies/0",
+        "id": "https://hirezakfargo.azureedge.net/schema/resume/proficiencies/0",
         "required": false,
         "properties": {
           "favoriteActivities": {
             "type": "array",
-            "id": "http://jsonschema.net/proficiencies/0/favoriteActivities",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/proficiencies/0/favoriteActivities",
             "required": false,
             "items": {
               "type": "string",
-              "id": "http://jsonschema.net/proficiencies/0/favoriteActivities/0",
+              "id": "https://hirezakfargo.azureedge.net/schema/resume/proficiencies/0/favoriteActivities/0",
               "required": false
             }
           },
           "level": {
             "type": "string",
-            "id": "http://jsonschema.net/proficiencies/0/level",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/proficiencies/0/level",
             "required": false
           },
           "skillName": {
             "type": "array",
-            "id": "http://jsonschema.net/proficiencies/0/skillName",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/proficiencies/0/skillName",
             "required": false,
             "items": {
               "type": "string",
-              "id": "http://jsonschema.net/proficiencies/0/skillName/0",
+              "id": "https://hirezakfargo.azureedge.net/schema/resume/proficiencies/0/skillName/0",
               "required": false
             }
           },
           "yearsOfExperience": {
             "type": "number",
-            "id": "http://jsonschema.net/proficiencies/0/yearsOfExperience",
+            "id": "https://hirezakfargo.azureedge.net/schema/resume/proficiencies/0/yearsOfExperience",
             "required": false
           }
         }
