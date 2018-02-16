@@ -166,7 +166,7 @@ p {
 
 .formatted-company-name 
 {
-    line-height: 80px;
+    line-height: 60px;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -175,9 +175,9 @@ p {
 
 .formatted-title-and-date-alignment-container 
 {
-    line-height: 80px;
+    line-height: 60px;
     float: right;
-    height: 80px;
+    height: 60px;
     display:inline-block;
 }
 
