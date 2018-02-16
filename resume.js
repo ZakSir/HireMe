@@ -17,6 +17,6 @@ function openRawGitHubFile(fileName)
 }
 
 var rawdata = '<!-- JSONINJSHERE -->';
-data = JSON.parse(rawdata);
+var data = JSON.parse(rawdata);
 
 ko.applyBindings(data);
