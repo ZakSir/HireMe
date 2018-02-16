@@ -14,6 +14,7 @@
           </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+        
         <script>hljs.initHighlightingOnLoad();</script>
 
     </head>
@@ -22,7 +23,15 @@
             <h1 class="title">resume.json</h1>
         </header>
         <article>
-            <!-- DATAHERE --> 
+            <div id="raw-json-top">
+                <!-- DATAHERE -->
+            </div>
+            <div id="formatted-top">
+                <div id="formatted-objective" class="candidate-info">
+                    <h2>Objective</h2>
+                    <p data-bind="text: objective></p>
+                </div>
+            </div>
         </article>
         <footer>
             commit: <a href="https://github.com/ZakSir/HireMe/commit/<!-- COMMITHERE -->" onClick="openGitHubcommit()"><!-- COMMITHERE --></a><br />
@@ -30,6 +39,7 @@
             word: <a onClick="openRawGitHubFile('resume.docx')" style="cursor: pointer;">resume.docx</a><br />
             pdf: <a onClick="openRawGitHubFile('resume.pdf')" style="cursor: pointer;">resume.pdf</a><br />
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
         <script src="/resume/resume.js"></script>
     </body> 
 </html>
