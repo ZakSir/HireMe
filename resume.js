@@ -18,5 +18,6 @@ function openRawGitHubFile(fileName)
 
 var rawdata = '<!-- JSONINJSHERE -->';
 var data = JSON.parse(rawdata);
+data.candidate.emailhref = "mailto:" + data.candidate.email;
 
 ko.applyBindings(data); 

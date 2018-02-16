@@ -29,6 +29,7 @@
             <div id="formatted-top">
                 <div id="formatted-name">
                     <h2 data-bind="text: candidate.fullName"></h2>
+                    <p><span id="formatted-candidate-location" data-bind="text: candidate.location"></span> | <a id="formatted-candidate-email" data-bind="attr: { href: candidate.emailhref, title: candidate.email, text: candidate.email }"></a></p>
                 </div>
                 <div id="formatted-objective" class="candidate-info">
                     <h2>Objective</h2>
