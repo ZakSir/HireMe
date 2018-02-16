@@ -271,5 +271,20 @@ h1, h2 {
         border: none;
     }
 
+    .formatted-date-row {
+        color: black;
+    }
+    
+    .formatted-company-header
+    {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    
+    .formatted-company-name 
+    {
+        color: black;
+    }
+
 
 }
