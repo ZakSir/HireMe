@@ -25,9 +25,9 @@
         <article>
             <div id="tabbed-container">
                 <div id="tabs">
-                    <div id="json-label" data-bind="css: { 'in-use-format': visiblePage() === 0 }, click: showJson">
+                    <div id="json-label" data-bind="css: { 'in-use-format': visiblePage() === 0, 'format-label' : true }, click: showJson">
                         JSON
-                    </div><div id="formatted-label" data-bind="css: { 'in-use-format': visiblePage() === 1 }, click: showHtml">
+                    </div><div id="formatted-label" data-bind="css: { 'in-use-format': visiblePage() === 1, 'format-label' : true }, click: showHtml">
                         Formatted
                     </div>
                 </div>

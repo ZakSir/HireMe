@@ -70,6 +70,10 @@ a:hover {
     border: 1px solid black;
 }
 
+.prettyprint {
+    margin: 0 !important;
+}
+
 @media (min-width: 600px)
 {
     header, article, footer {
