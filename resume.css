@@ -100,14 +100,14 @@ a:hover {
 
 
 #formatted-skills h3 {
-    font-size: 1.2em;
+    font-size: 1.2em; 
     margin-bottom: 5px;
 }
 
 #formatted-skills p
 {
 padding :0;
-}
+} 
 
 
 #formatted-experience h3 {
