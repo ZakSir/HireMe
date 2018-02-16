@@ -113,7 +113,7 @@ a:hover {
 }
 
 #formatted-experience h3 {
-    font-size : 1.5em;
+    font-size : 1.2em;
 }
 
 #formatted-experience h4 {
@@ -219,5 +219,21 @@ h1, h2 {
          max-width:870px;
          margin-left: auto;
          margin-right: auto;
+    }
+
+
+    #formatted-experience h3 {
+        font-size : 1.5em;
+    }
+
+    .formatted-company-header
+    {
+        background-color: #0099FF;
+        margin: 0 -20px;
+        padding: 0 20px;
+    }
+
+    #formatted-top {
+        padding: 20px;
     }
 }
