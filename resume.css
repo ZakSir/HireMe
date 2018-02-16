@@ -207,6 +207,10 @@ h1, h2 {
     padding: 0 10px;
 }
 
+#formatted-experience-container {
+    page-break-inside: avoid;
+}
+
 #formatted-experience {
     page-break-inside: avoid;
 }
