@@ -252,3 +252,24 @@ h1, h2 {
         margin-top:20px;
     }
 }
+
+@media print { 
+    header
+    {
+         display: none !important;
+    }
+
+    .downloads {
+        display: none !important;
+    }
+
+    #tabs { 
+        display: none !important;
+    }
+
+    .resume-container {
+        border: none;
+    }
+
+
+}
