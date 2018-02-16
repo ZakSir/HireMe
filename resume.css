@@ -150,6 +150,10 @@ p {
     display:none;
 }
 
+.formatted-title-row p, .formatted-date-row p {
+    margin :0;
+}
+
 h3, h4 {
     font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
     font-weight :normal;
