@@ -53,13 +53,11 @@ a:hover {
 }
 
 #json-label {
-    display: inline-block;
-    padding: 5px;
+    
 }
 
 #formatted-label {
-    display: inline-block;
-    padding: 5px;   
+    
 }
 
 .in-use-format {
@@ -84,6 +82,9 @@ a:hover {
     border-right: 1px solid #8888FF;
 
     font-size: .9em;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
 }
 
 #formatted-top {
