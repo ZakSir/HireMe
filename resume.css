@@ -194,11 +194,12 @@ h2 {
 }
 
 h1 {
+    font-size: 1.8em;
     font-family: 'consolas', 'Andale Mono', 'Courier', 'Courier New';
 }
 
 h1.formatted {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Segoe UI Light';
+    font-family: 'HelveticaNeue-Thikn', 'Helvetica Neue Thin', 'Segoe UI Light';
     font-weight: normal;
 }
 
