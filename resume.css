@@ -61,8 +61,8 @@ a:hover {
 }
 
 .in-use-format {
-    border: 1px solid white;
-}
+    border-bottom: 1px solid white;
+}   
 
 .resume-container { 
     border: 1px solid black;
