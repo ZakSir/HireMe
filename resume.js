@@ -33,7 +33,9 @@ data.showHtml = function() {
 }
 
 data.toggleDateDisplay = function() { 
-    data.dateDisplay((++data.dateDisplay()) % 2);
+    var dd = data.dateDisplay();
+    dd = ++dd % 2;
+    data.dateDisplay(dd);
 }
 
 var i;
