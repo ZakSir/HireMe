@@ -54,6 +54,14 @@ a:hover {
     margin-left: -11px;
 }
 
+#json-label {
+    border-right: none;
+}
+
+#formatted-label {
+    border-left:none;
+}
+
 #json-label.in-use-format{
     border-bottom: 1px solid white;
 } 
