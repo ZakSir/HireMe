@@ -78,10 +78,6 @@ for(i=0;i<data.experience.length; i++)
         endDateInMonths = (data.experience[i].endDate.year * 12) + data.experience[i].endDate.month;
     }
 
-    console.log(data.experience[i].startDate.year * 12) ;
-    console.log(startDateInMonths);
-    console.log(endDateInMonths);
-
     var range = endDateInMonths - startDateInMonths;
     var years = Math.floor(range / 12);
     var months = range % 12;
@@ -89,13 +85,21 @@ for(i=0;i<data.experience.length; i++)
 
     var timeSpanString;
 
-    if(years > 0)
+    if(years > 1)
     {
-        timeSpanString = years.toString() + " years " + months.toString() + "months";
+        timeSpanString = years.toString() + " years";
     }
-    else
+    else if(years > 0){
+        timespanString = years.toString() + " year";
+    }
+
+    if(months > 1)
     {
-        timeSpanString = months.toString() + " months";
+        timeSpanString = timeSpanString + " " + months.toString() + " months"; 
+    }
+    else if(years > 0)
+    {
+        timeSpanString = timeSpanString + " " + months.toString() + " month";
     }
 
     if(data.experience[i].endDate === null) {
