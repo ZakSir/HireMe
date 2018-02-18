@@ -71,7 +71,7 @@ for(i=0;i<data.experience.length; i++)
 
     if(data.experience[i].endDate === null) {
         var dtnow = Date.now();
-        endDateInMonths = (now.getFullYear() * 12) + now.getMonth();
+        endDateInMonths = (dtnow.getFullYear() * 12) + dtnow.getMonth();
     } else {
         endDateInMonths = (data.experience[i].endDate.year * 12) + data.experience[i].endDate.months;
     }
