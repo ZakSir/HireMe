@@ -60,7 +60,7 @@ a:hover {
     margin-left: -11px;
 }
 
-.in-use-format {
+#json-label.in-use-format, #formatted-label.in-use-format  {
     border-bottom: 1px solid white;
 }   
 
