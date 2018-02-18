@@ -22,6 +22,7 @@ var rawdata = '<!-- JSONINJSHERE -->';
 var data = JSON.parse(rawdata);
 data.candidate.emailhref = "mailto:" + data.candidate.email;
 data.visiblePage = ko.observable(1);
+data.dateDisplay = ko.observable(0);
 
 data.showJson = function() {
     data.visiblePage(0);
@@ -29,6 +30,10 @@ data.showJson = function() {
 
 data.showHtml = function() {
     data.visiblePage(1);
+}
+
+data.toggleDateDisplay = function() { 
+    data.dateDisplay(++(data.dateDisplay()) % 2);
 }
 
 var i;
@@ -39,12 +44,14 @@ for(i=0;i<data.proficiencies.length; i++)
 
 for(i=0;i<data.experience.length; i++)
 {
+    // setup contractor stuff
     data.experience[i].contractorToVisible = ko.computed(function() {
         var result =  (typeof data.experience[i].contractorTo != 'undefined');
 
         return result;
     }, data);
     
+    // contractor text
     data.experience[i].contractorToText = ko.computed(function() {
         if(typeof data.experience[i].contractorTo === 'undefined')
         {
@@ -54,6 +61,40 @@ for(i=0;i<data.experience.length; i++)
             return data.experience[i].contractorTo;
         }
     }, data);
+
+    // static property
+    
+    var startDateInMonths;
+    var endDateInMonths;
+    
+    startDateInMonths= (data.experience[i].startDate.year * 12) + data.experience[i].startDate.months;
+
+    if(data.experience[i].endDate === null) {
+        var dtnow = Date.now();
+        endDateInMonths = (now.getFullYear() * 12) + now.getMonth();
+    } else {
+        endDateInMonths = (data.experience[i].endDate.year * 12) + data.experience[i].endDate.months;
+    }
+
+    var years = Math.floor(startDateInMonths / 12);
+    var months = endDateInMonths % 12;
+
+    var timeSpanString;
+
+    if(years > 0)
+    {
+        timeSpanString = years.toString() + " years " + months.toString() + "months";
+    }
+    else
+    {
+        timeSpanString = months.toString() + " months";
+    }
+
+    if(data.experience[i].endDate === null) {
+        timeSpanString = timeSpanString + " (current position)";
+    }
+
+    data.experience[i].dateRangeDisplay = timeSpanString;
 }
 
 ko.applyBindings(data); 
