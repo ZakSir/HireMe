@@ -97,7 +97,7 @@ for(i=0;i<data.experience.length; i++)
     {
         timeSpanString = timeSpanString + " " + months.toString() + " months"; 
     }
-    else if(years > 0)
+    else if(months > 0)
     {
         timeSpanString = timeSpanString + " " + months.toString() + " month";
     }
