@@ -69,16 +69,16 @@ for(i=0;i<data.experience.length; i++)
     var startDateInMonths;
     var endDateInMonths;
     
-    startDateInMonths = (data.experience[i].startDate.year * 12) + data.experience[i].startDate.months;
+    startDateInMonths = (data.experience[i].startDate.year * 12) + data.experience[i].startDate.month;
 
     if(data.experience[i].endDate === null) {
         var dtnow = new Date(Date.now());
         endDateInMonths = (dtnow.getFullYear() * 12) + dtnow.getMonth();
     } else {
-        endDateInMonths = (data.experience[i].endDate.year * 12) + data.experience[i].endDate.months;
+        endDateInMonths = (data.experience[i].endDate.year * 12) + data.experience[i].endDate.month;
     }
 
-    console.log(data.experience[i].startDate.year * 12);
+    console.log(data.experience[i].startDate.year * 12) ;
     console.log(startDateInMonths);
     console.log(endDateInMonths);
 
