@@ -83,7 +83,7 @@ for(i=0;i<data.experience.length; i++)
     var months = range % 12;
 
 
-    var timeSpanString;
+    var timeSpanString = "";
 
     if(years > 1)
     {
