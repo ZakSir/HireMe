@@ -90,7 +90,7 @@ for(i=0;i<data.experience.length; i++)
         timeSpanString = years.toString() + " years";
     }
     else if(years > 0){
-        timespanString = years.toString() + " year";
+        timeSpanString = years.toString() + " year";
     }
 
     if(months > 1)
