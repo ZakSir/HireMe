@@ -36,12 +36,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.title {
-    font-family: 'consolas', 'Andale Mono', 'Courier', 'Courier New';
-    font-size: 40pt;
-    padding: 10px 10px;
-}
-
 .hljs
 {
     white-space: pre-wrap;
