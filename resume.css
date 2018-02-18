@@ -55,19 +55,21 @@ a:hover {
 }
 
 #json-label {
-    border-right: none;
+    
 }
 
 #formatted-label {
-    border-left:none;
+    
 }
 
 #json-label.in-use-format{
     border-bottom: 1px solid white;
+    border-right: none;
 } 
 
 #formatted-label.in-use-format  {
     border-bottom: 1px solid white;
+    border-left:none;
 }   
 
 .resume-container { 
