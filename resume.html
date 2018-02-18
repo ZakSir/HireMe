@@ -88,7 +88,7 @@
                                     <p class="formatted-title-row">
                                         <span class="formatted-job-title" data-bind="text: title"></span>
                                     </p>
-                                    <p class="formatted-date-row" data-bind="visible: $parent.dateDisplay() === 0, click: toggleDateDisplay">
+                                    <p class="formatted-date-row" data-bind="visible: $parent.dateDisplay() === 0, click: $parent.toggleDateDisplay">
                                         <span class="formatted-job-start-date-month" data-bind="text: startDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-start-date-year" data-bind="text: startDate.year"></span>
                                         <span class="decoration formatted-job-title-date-range-seperator"> - </span>
                                         <span data-bind="ifnot: endDate === null ">
@@ -98,7 +98,7 @@
                                             Current
                                         </span>
                                     </p>
-                                    <p class="formatted-date-row" data-bind="visible: $parent.dateDisplay() === 1, click: toggleDateDisplay">
+                                    <p class="formatted-date-row" data-bind="visible: $parent.dateDisplay() === 1, click: $parent.toggleDateDisplay">
                                         <span class="formatted-date-range" data-bind="text: dateRangeDisplay"></span>
                                     </p>
                                 </div>
