@@ -74,14 +74,12 @@ a:hover {
 
 .format-label
 {
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
+    border: 1px solid black;
 
     font-size: .9em;
     display: inline-block;
     padding: 10px;
-    margin: 0;
+    margin: 0 0 -1px 0;
 }
 
 #formatted-top {
@@ -120,6 +118,7 @@ a:hover {
     font-size : 1.2em;
     margin: 5px 0;
 }
+
 
 #formatted-experience li 
 {
