@@ -78,8 +78,9 @@ for(i=0;i<data.experience.length; i++)
         endDateInMonths = (data.experience[i].endDate.year * 12) + data.experience[i].endDate.months;
     }
 
-    var years = Math.floor(startDateInMonths / 12);
-    var months = endDateInMonths % 12;
+    var range = endDateInMonths - startDateInMonths;
+    var years = Math.floor(range / 12);
+    var months = range % 12;
 
     var timeSpanString;
 
