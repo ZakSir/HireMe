@@ -70,7 +70,7 @@ for(i=0;i<data.experience.length; i++)
     startDateInMonths= (data.experience[i].startDate.year * 12) + data.experience[i].startDate.months;
 
     if(data.experience[i].endDate === null) {
-        var dtnow = Date.now();
+        var dtnow = new Date(Date.now());
         endDateInMonths = (dtnow.getFullYear() * 12) + dtnow.getMonth();
     } else {
         endDateInMonths = (data.experience[i].endDate.year * 12) + data.experience[i].endDate.months;
