@@ -78,6 +78,7 @@ for(i=0;i<data.experience.length; i++)
         endDateInMonths = (data.experience[i].endDate.year * 12) + data.experience[i].endDate.months;
     }
 
+    console.log(Json.stringify(data.experience[i].endDate));
     console.log(startDateInMonths);
     console.log(endDateInMonths);
 
