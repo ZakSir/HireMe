@@ -40,9 +40,9 @@ data.toggleDateDisplay = function() {
 
 // do phoneNumber
 var phoneNumberRaw = data.candidate.phone.toString(); // cuz its an int
-var areaCode = phoneNubmerRaw.substring(0,3);
+var areaCode = phoneNumberRaw.substring(0,3);
 var cityCode = phoneNumberRaw.substring(3,6);
-var rest = phoneNubmerRaw.substring(6);
+var rest = phoneNumberRaw.substring(6);
 
 data.candidate.phoneDisplay = "+1 (" + areaCode + ") " + cityCode + "-" + rest;
 data.candidate.phoneHref = "tel:" + phoneNumberRaw;
