@@ -10,3 +10,4 @@ test 8 adding retry logic.
 test 9 fixing retry logic.
 test 10 changing build for doubles.
 test 11 script failed
+test 12 proxies
