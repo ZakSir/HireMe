@@ -33,7 +33,7 @@ data.showHtml = function() {
 }
 
 data.toggleDateDisplay = function() { 
-    data.dateDisplay(++(data.dateDisplay()) % 2);
+    data.dateDisplay((++data.dateDisplay()) % 2);
 }
 
 var i;
