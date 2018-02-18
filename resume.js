@@ -78,7 +78,7 @@ for(i=0;i<data.experience.length; i++)
         endDateInMonths = (data.experience[i].endDate.year * 12) + data.experience[i].endDate.months;
     }
 
-    console.log(data.experience[i].endDate.year);
+    console.log(data.experience[i].startDate.year);
     console.log(startDateInMonths);
     console.log(endDateInMonths);
 
