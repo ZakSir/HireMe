@@ -174,6 +174,8 @@ h2 {
 }
 #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-date-row {
   color: white;
+  display: block;
+  float: right;
 }
 #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-accomplishments {
   page-break-inside: avoid;
