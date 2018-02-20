@@ -340,6 +340,11 @@ h2 {
   #formatted-top #formatted-name .candidate-info-seperator {
     display: inline;
   }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header {
+    background-color: transparent;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name {
     display: inline-block;
     margin: 0;
@@ -361,6 +366,7 @@ h2 {
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container > p {
     text-align: right;
+    color: black;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-title-row {
     float: none;
