@@ -188,37 +188,17 @@ h2 {
     margin: 10px -10px 5px -10px;
     padding: 0 10px;
   }
-  #formatted-top #formatted-name #formatted-candidate-name {
-    margin-top: 20px;
-  }
-  #formatted-top #formatted-name #formatted-candidate-name-given-name {
-    font-family: 'HelveticaNeue-Thin', 'Helvetica Neue Thin', 'Segoe UI Light';
-    font-weight: normal;
-  }
-  #formatted-top #formatted-name #formatted-candidate-name-sur-name {
-    font-family: 'HelveticaNeue-Medium', 'Helvetica Neue Medium', 'Segoe UI';
-    font-weight: normal;
-  }
-  #formatted-top #formatted-name #formatted-candidate-name-space {
-    display: none;
-  }
-  #formatted-top #formatted-name .location-info {
-    display: inline;
-  }
-  #formatted-top #formatted-name .candidate-info-seperator {
-    display: inline;
-  }
   #formatted-top #formatted-experience-container #formatted-experience h3 {
     font-size: 1.5em;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header {
-    margin: 0 -40px;
-    padding: 0 40px;
+    margin: 0 -10px;
+    padding: 0 10px;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name {
     display: block;
     margin: 0;
-    padding: 10;
+    padding: 10px;
     color: white;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name .contractor-decoration {

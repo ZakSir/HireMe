@@ -284,31 +284,6 @@ h2 {
         }
     
         #formatted-name {
-            #formatted-candidate-name {
-                margin-top:20px;
-            }
-
-            #formatted-candidate-name-given-name { 
-                font-family: @fontThin;
-                font-weight: normal;
-            }
-            
-            #formatted-candidate-name-sur-name {
-                font-family: @fontBold;
-                font-weight: normal;
-            }
-            
-            #formatted-candidate-name-space {
-                display:none;
-            }
-    
-            .location-info {
-                display: inline;
-            }
-
-            .candidate-info-seperator {
-                display:inline;
-            }
         }
     
         #formatted-experience-container {
@@ -322,14 +297,14 @@ h2 {
     
                     .formatted-company-header
                     {
-                        margin: 0 -40px;
-                        padding: 0 40px;
+                        margin: 0 -(@grid * 2);
+                        padding: 0 (@grid * 2);
     
                         .formatted-company-name 
                         {
                             display: block;
                             margin: 0;
-                            padding: 10;
+                            padding: @grid * 2;
                             color: @colorWhitest;
     
                             .contractor-decoration 
