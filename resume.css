@@ -81,7 +81,7 @@ h2 {
   border-bottom: 1px solid white;
 }
 #formatted-top {
-  padding: 10px;
+  padding: 0 10px;
   font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
   font-weight: normal;
 }
@@ -141,12 +141,12 @@ h2 {
 #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header {
   background-color: #0099FF;
   margin: 0 -10px;
-  padding: 0 10px;
+  padding: 10px;
 }
 #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name {
   display: block;
   margin: 0;
-  padding: 10;
+  padding: 10px;
   color: white;
 }
 #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name .contractor-decoration {
@@ -185,18 +185,8 @@ h2 {
 }
 @media (min-width: 600px) {
   #formatted-top .section-header {
-    margin: 40px -40px 5px -40px;
-    padding: 0 40px;
-  }
-  #formatted-top .formatted-skills-container {
-    color: #999999;
-  }
-  #formatted-top .formatted-skills-container #formatted-skills p {
-    padding: 0;
-  }
-  #formatted-top .formatted-skills-container #formatted-skills h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+    margin: 10px -10px 5px -10px;
+    padding: 0 10px;
   }
   #formatted-top #formatted-name #formatted-candidate-name {
     margin-top: 20px;

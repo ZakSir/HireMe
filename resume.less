@@ -123,7 +123,7 @@ h2 {
 
 
 #formatted-top {
-    padding: 10px;
+    padding: 0 10px;
     font-family: @fontNormal;
     font-weight :normal;
 
@@ -202,14 +202,14 @@ h2 {
                 .formatted-company-header
                 {
                     background-color: @colorBrightBlue;
-                    margin: 0 -10px;
-                    padding: 0 10px;
+                    margin: 0 -(@grid * 2);
+                    padding: @grid * 2;
 
                     .formatted-company-name 
                     {
                         display: block;
                         margin: 0;
-                        padding: 10;
+                        padding: @grid * 2;
                         color: @colorWhitest;
 
                         .contractor-decoration 
@@ -268,21 +268,17 @@ h2 {
 {
     #formatted-top {    
         .section-header {
-            margin: 40px -40px 5px -40px;
-            padding: 0 40px;
+            margin: (@grid * 2) -(@grid * 2) @grid -(@grid * 2);
+            padding: 0 (@grid * 2);
         }
     
         .formatted-skills-container {
-            color: #999999;
     
             #formatted-skills{
                 p {
-                    padding :0;
                 } 
     
                 h3 {
-                    font-size: 1.2em; 
-                    margin-bottom: 5px;
                 }
             }
         }
