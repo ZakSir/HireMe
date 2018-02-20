@@ -53,11 +53,11 @@
                     <span id="formatted-candidate-name-given-name" data-bind="text: candidate.name.givenName"></span><span id="formatted-candidate-name-space">&nbsp;</span><span id="formatted-candidate-name-sur-name" data-bind="text: candidate.name.surname"></span>
                 </h2>
                 <p id="formatted-candidate-sub-info">
-                    <span id="formatted-candidate-location location-info" data-bind="text: candidate.location"></span>
+                    <a id="formatted-candidate-email" class="location-info" data-bind="attr: { href: candidate.emailhref, title: candidate.email}, text: candidate.email "></a>
                     <span class="decoration candidate-info-seperator"> | </span>
-                    <a id="formatted-candidate-email location-info" data-bind="attr: { href: candidate.emailhref, title: candidate.email}, text: candidate.email "></a>
+                    <a id="formatted-candidate-phone-link" class="location-info" href="phone" data-bind="attr: { href: candidate.phoneHref }"><span data-bind="text: candidate.phoneDisplay"></span></a>
                     <span class="decoration candidate-info-seperator"> | </span>
-                    <a id="formatted-candidate-phone-link location-info" href="phone" data-bind="attr: { href: candidate.phoneHref }"><span data-bind="text: candidate.phoneDisplay"></span></a>
+                    <span id="formatted-candidate-location" class="location-info" data-bind="text: candidate.location"></span>                    
                 </p>
             </div>
             <div id="formatted-objective" class="candidate-info">
