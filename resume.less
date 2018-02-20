@@ -490,20 +490,74 @@ h2 {
         border: none;
     }
 
-    .formatted-date-row, .formatted-title-row {
-        color: black !important;
-    }
+    #formatted-top { 
+        padding: 0 @localPadding;
+
+        .section-header {
+            margin: @localPadding -@localPadding @grid -@localPadding;
+            padding: 0 @localPadding;
+        }
     
-    .formatted-company-header
-    {
-        background-color: white;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-    }
+        #formatted-name {               
+            .location-info {
+                display: inline;
+            }
+
+            .candidate-info-seperator {
+                display: inline;
+            }
+        }
     
-    .formatted-company-name 
-    {
-        color: black;
+        #formatted-experience-container {        
+            #formatted-experience {    
+                .formatted-experience-instance-container {
+                    .formatted-company-header
+                    {
+                        margin: 0 -@localPadding;
+                        padding: 0 @localPadding;
+
+                        .formatted-company-name 
+                        {
+                            display: inline-block;
+                            margin: 0;
+                            padding: 0;
+                            color: @colorWhitest;
+
+                            .contractor-decoration 
+                            {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .formatted-title-and-date-alignment-container 
+                    {
+                        line-height: 60px;
+                        float: right;
+                        height: 60px;
+                        padding: 0;
+
+                        .formatted-title-and-date-container
+                        {
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            > p {
+                                text-align: right;
+                            }
+                            
+                            .formatted-title-row {
+                                float: none;
+                            }
+
+                            .formatted-date-row {
+                                float:none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .section-header {
