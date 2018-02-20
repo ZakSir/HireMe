@@ -185,7 +185,7 @@ h2 {
 }
 @media (min-width: 600px) {
   #formatted-top .section-header {
-    margin: 10px -10px 5px -10px;
+    margin: 10px -10px 10px -10px;
     padding: 0 10px;
   }
   #formatted-top #formatted-experience-container #formatted-experience h3 {
@@ -196,33 +196,29 @@ h2 {
     padding: 0 10px;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name {
-    display: block;
+    display: inline-block;
     margin: 0;
-    padding: 10px;
+    padding: 0;
     color: white;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name .contractor-decoration {
     display: none;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container {
-    float: none;
-    display: block;
+    line-height: 60px;
+    float: right;
+    height: 60px;
+    padding: 0;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container {
-    display: block;
-    line-height: normal;
-    color: white;
-  }
-  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container > p {
-    font-size: 0.9em;
-    padding: 0;
-    font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
-    font-weight: normal;
-    color: white;
+    display: inline-block;
+    vertical-align: middle;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-title-row {
-    display: block;
-    float: left;
+    float: none;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-date-row {
+    float: none;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-accomplishments {
     page-break-inside: avoid;
