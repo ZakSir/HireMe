@@ -244,12 +244,22 @@ h1.formatted {
     display:none;
 }
 
+.formatted-company-name-contractor-at-decoration, .formatted-company-name-contractor-to 
+{
+    display:none;
+}
+
 @media (min-width: 600px)
 {
     header, article, footer {
          max-width:570px;
          margin-left: auto;
          margin-right: auto;
+    }
+
+    .formatted-company-name-contractor-at-decoration, .formatted-company-name-contractor-to 
+    {
+        display: inline;
     }
 }
 
