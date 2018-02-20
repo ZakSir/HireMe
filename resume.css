@@ -284,9 +284,9 @@ h2 {
     padding: 0 40px;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name {
-    display: block;
+    display: inline-block;
     margin: 0;
-    padding: 10px;
+    padding: 0;
     color: white;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name .contractor-decoration {
@@ -296,7 +296,7 @@ h2 {
     line-height: 60px;
     float: right;
     height: 60px;
-    display: block;
+    padding: 0;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container {
     display: inline-block;
