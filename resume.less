@@ -180,6 +180,10 @@ h2 {
 
     #formatted-experience-container {
         page-break-inside: avoid;
+        
+        #formatted-experience-header {
+            border-bottom:none;
+        }
     
         #formatted-experience {
             h3 {
@@ -209,7 +213,7 @@ h2 {
                     {
                         display: block;
                         margin: 0;
-                        padding: @grid * 2;
+                        padding: 0;
                         color: @colorWhitest;
 
                         .contractor-decoration 
@@ -254,10 +258,6 @@ h2 {
                 .formatted-accomplishments {
                     page-break-inside: avoid;
                 }
-            }
-
-            #formatted-top #formatted-experience-header {
-                border-bottom:none;
             }
         }
     }

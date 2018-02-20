@@ -125,6 +125,9 @@ h2 {
 #formatted-top #formatted-experience-container {
   page-break-inside: avoid;
 }
+#formatted-top #formatted-experience-container #formatted-experience-header {
+  border-bottom: none;
+}
 #formatted-top #formatted-experience-container #formatted-experience h3 {
   font-size: 1.2em;
 }
@@ -146,7 +149,7 @@ h2 {
 #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name {
   display: block;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   color: white;
 }
 #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name .contractor-decoration {
@@ -179,9 +182,6 @@ h2 {
 }
 #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-accomplishments {
   page-break-inside: avoid;
-}
-#formatted-top #formatted-experience-container #formatted-experience #formatted-top #formatted-experience-header {
-  border-bottom: none;
 }
 @media (min-width: 600px) {
   #formatted-top .section-header {
