@@ -340,15 +340,11 @@ h2 {
   #formatted-top #formatted-name .candidate-info-seperator {
     display: inline;
   }
-  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header {
-    margin: 0 -40px;
-    padding: 0 40px;
-  }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name {
     display: inline-block;
     margin: 0;
     padding: 0;
-    color: white;
+    color: black;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name .contractor-decoration {
     display: none;

@@ -474,7 +474,7 @@ h2 {
 
 @media print { 
     @localPadding: @grid * 8;
-    
+
     header
     {
          display: none !important;
@@ -515,15 +515,16 @@ h2 {
                 .formatted-experience-instance-container {
                     .formatted-company-header
                     {
-                        margin: 0 -@localPadding;
-                        padding: 0 @localPadding;
+                        background-color: transparent;
+                        border-top: @bborder;
+                        border-bottom: @bborder;
 
                         .formatted-company-name 
                         { 
                             display: inline-block;
                             margin: 0;
                             padding: 0;
-                            color: @colorWhitest;
+                            color: @colorBlackest;
 
                             .contractor-decoration 
                             {
@@ -546,6 +547,7 @@ h2 {
 
                             > p {
                                 text-align: right;
+                                color: @blackest;
                             }
                             
                             .formatted-title-row {
