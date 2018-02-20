@@ -55,6 +55,12 @@ h2 {
 .hljs {
   white-space: pre-wrap;
 }
+.resume-container {
+  border: 1px solid black;
+}
+.breaker {
+  clear: both;
+}
 #tabbed-container {
   display: block;
 }
@@ -73,9 +79,6 @@ h2 {
 }
 #tabbed-container #json-label.in-use-format {
   border-bottom: 1px solid white;
-}
-.resume-container {
-  border: 1px solid black;
 }
 #formatted-top {
   padding: 10px;
@@ -170,7 +173,7 @@ h2 {
   float: left;
 }
 #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-date-row {
-  color: #ddd;
+  color: white;
 }
 #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-accomplishments {
   page-break-inside: avoid;
@@ -179,6 +182,82 @@ h2 {
   border-bottom: none;
 }
 @media (min-width: 600px) {
+  #formatted-top .section-header {
+    margin: 40px -40px 5px -40px;
+    padding: 0 40px;
+  }
+  #formatted-top .formatted-skills-container {
+    color: #999999;
+  }
+  #formatted-top .formatted-skills-container #formatted-skills p {
+    padding: 0;
+  }
+  #formatted-top .formatted-skills-container #formatted-skills h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  #formatted-top #formatted-name #formatted-candidate-name {
+    margin-top: 20px;
+  }
+  #formatted-top #formatted-name #formatted-candidate-name-given-name {
+    font-family: 'HelveticaNeue-Thin', 'Helvetica Neue Thin', 'Segoe UI Light';
+    font-weight: normal;
+  }
+  #formatted-top #formatted-name #formatted-candidate-name-sur-name {
+    font-family: 'HelveticaNeue-Medium', 'Helvetica Neue Medium', 'Segoe UI';
+    font-weight: normal;
+  }
+  #formatted-top #formatted-name #formatted-candidate-name-space {
+    display: none;
+  }
+  #formatted-top #formatted-name .location-info {
+    display: inline;
+  }
+  #formatted-top #formatted-name .candidate-info-seperator {
+    display: inline;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience h3 {
+    font-size: 1.5em;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header {
+    margin: 0 -40px;
+    padding: 0 40px;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name {
+    display: block;
+    margin: 0;
+    padding: 10;
+    color: white;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name .contractor-decoration {
+    display: none;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container {
+    float: none;
+    display: block;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container {
+    display: block;
+    line-height: normal;
+    color: white;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container > p {
+    font-size: 0.9em;
+    padding: 0;
+    font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
+    font-weight: normal;
+    color: white;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-title-row {
+    display: block;
+    float: left;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-accomplishments {
+    page-break-inside: avoid;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience #formatted-top #formatted-experience-header {
+    border-bottom: none;
+  }
   .formatted-company-name {
     line-height: 60px;
     display: inline-block;
@@ -284,9 +363,6 @@ h2 {
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-title-row {
     display: block;
     float: left;
-  }
-  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-date-row {
-    color: #ddd;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-accomplishments {
     page-break-inside: avoid;

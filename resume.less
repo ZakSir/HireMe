@@ -83,6 +83,15 @@ h2 {
     white-space: pre-wrap;
 }
 
+.resume-container { 
+    border: @bborder;
+}
+
+.breaker 
+{
+    clear: both;
+}
+
 #tabbed-container {
     display: block;
 
@@ -111,9 +120,7 @@ h2 {
     }
 }
 
-.resume-container { 
-    border: @bborder;
-}
+
 
 #formatted-top {
     padding: 10px;
@@ -237,7 +244,7 @@ h2 {
                         }
                         
                         .formatted-date-row {
-                            color: #ddd;
+                            color: @colorWhitest;
                         }
                     }
                 }
@@ -257,6 +264,120 @@ h2 {
 
 @media (min-width: 600px)
 {
+    #formatted-top {    
+        .section-header {
+            margin: 40px -40px 5px -40px;
+            padding: 0 40px;
+        }
+    
+        .formatted-skills-container {
+            color: #999999;
+    
+            #formatted-skills{
+                p {
+                    padding :0;
+                } 
+    
+                h3 {
+                    font-size: 1.2em; 
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    
+        #formatted-name {
+            #formatted-candidate-name {
+                margin-top:20px;
+            }
+
+            #formatted-candidate-name-given-name { 
+                font-family: @fontThin;
+                font-weight: normal;
+            }
+            
+            #formatted-candidate-name-sur-name {
+                font-family: @fontBold;
+                font-weight: normal;
+            }
+            
+            #formatted-candidate-name-space {
+                display:none;
+            }
+    
+            .location-info {
+                display: inline;
+            }
+
+            .candidate-info-seperator {
+                display:inline;
+            }
+        }
+    
+        #formatted-experience-container {
+        
+            #formatted-experience {
+                h3 {
+                    font-size : 1.5em;
+                }
+    
+                .formatted-experience-instance-container {
+    
+                    .formatted-company-header
+                    {
+                        margin: 0 -40px;
+                        padding: 0 40px;
+    
+                        .formatted-company-name 
+                        {
+                            display: block;
+                            margin: 0;
+                            padding: 10;
+                            color: @colorWhitest;
+    
+                            .contractor-decoration 
+                            {
+                                display: none;
+                            }
+                        }
+                    }
+    
+                    .formatted-title-and-date-alignment-container 
+                    {
+                        float: none;
+                        display:block;
+    
+                        .formatted-title-and-date-container
+                        {
+                            display: block;
+                            line-height: normal;
+                            color: white;
+    
+                            > p {
+                                font-size: 0.9em;
+                                padding :0;
+                                font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
+                                font-weight :normal;
+                                color: white;
+                            }
+                            
+                            .formatted-title-row {
+                                display:block;
+                                float: left;
+                            }
+                        }
+                    }
+    
+                    .formatted-accomplishments {
+                        page-break-inside: avoid;
+                    }
+                }
+    
+                #formatted-top #formatted-experience-header {
+                    border-bottom:none;
+                }
+            }
+        }
+    }
     .formatted-company-name 
     {
         line-height: 60px;
@@ -397,10 +518,6 @@ h2 {
                             .formatted-title-row {
                                 display:block;
                                 float: left;
-                            }
-                            
-                            .formatted-date-row {
-                                color: #ddd;
                             }
                         }
                     }
