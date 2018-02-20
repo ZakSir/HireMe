@@ -386,6 +386,7 @@ h2 {
 
 @media (min-width: 900px)
 {
+    @localPadding: @grid * 8;
     header, article, footer {
          max-width:870px;
          margin-left: auto;
@@ -394,23 +395,8 @@ h2 {
 
     #formatted-top {    
         .section-header {
-            margin: 40px -40px 5px -40px;
-            padding: 0 40px;
-        }
-    
-        .formatted-skills-container {
-            color: #999999;
-    
-            #formatted-skills{
-                p {
-                    padding :0;
-                } 
-    
-                h3 {
-                    font-size: 1.2em; 
-                    margin-bottom: 5px;
-                }
-            }
+            margin: @localPadding -@localPadding @grid -@localPadding;
+            padding: 0 @localPadding;
         }
     
         #formatted-name {               
@@ -419,23 +405,24 @@ h2 {
             }
 
             .candidate-info-seperator {
-                display:inline;
+                display: inline;
             }
         }
     
         #formatted-experience-container {        
             #formatted-experience {    
-                .formatted-experience-instance-container {    
+                .formatted-experience-instance-container {
+    
                     .formatted-company-header
                     {
-                        margin: 0 -40px;
-                        padding: 0 40px;
+                        margin: 0 -@localPadding;
+                        padding: 0 @localPadding;
     
                         .formatted-company-name 
                         {
                             display: block;
                             margin: 0;
-                            padding: 10;
+                            padding: @grid * 2;
                             color: @colorWhitest;
     
                             .contractor-decoration 

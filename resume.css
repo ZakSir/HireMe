@@ -270,16 +270,6 @@ h2 {
     margin: 40px -40px 5px -40px;
     padding: 0 40px;
   }
-  #formatted-top .formatted-skills-container {
-    color: #999999;
-  }
-  #formatted-top .formatted-skills-container #formatted-skills p {
-    padding: 0;
-  }
-  #formatted-top .formatted-skills-container #formatted-skills h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-  }
   #formatted-top #formatted-name .location-info {
     display: inline;
   }
@@ -293,7 +283,7 @@ h2 {
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name {
     display: block;
     margin: 0;
-    padding: 10;
+    padding: 10px;
     color: white;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name .contractor-decoration {
