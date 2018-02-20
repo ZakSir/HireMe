@@ -72,7 +72,7 @@ h2 {
   margin: 0 0 -1px 0;
 }
 #tabbed-container #formatted-label {
-  margin-left: -10px;
+  margin-left: -6px;
 }
 #tabbed-container #formatted-label.in-use-format {
   border-bottom: 1px solid white;
