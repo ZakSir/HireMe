@@ -173,7 +173,7 @@ p {
 .formatted-title-and-date-alignment-container 
 {
     line-height: 60px;
-    float: right;
+    float: none;
     height: 60px;
     display:inline-block;
 }
@@ -246,7 +246,7 @@ h1.formatted {
 
 .formatted-company-name-contractor-at-decoration, .formatted-company-name-contractor-to 
 {
-    display:none;
+    display: inline;
 }
 
 @media (min-width: 600px)
@@ -258,8 +258,19 @@ h1.formatted {
     }
 
     .formatted-company-name-contractor-at-decoration, .formatted-company-name-contractor-to 
-    {
-        display: inline;
+{
+    display:none;
+}
+
+
+
+    .formatted-title-and-date-alignment-container {
+        float:right;
+        padding: 10px 0;
+    }
+
+    .formatted-title-and-date-container {
+        display:block;
     }
 }
 
