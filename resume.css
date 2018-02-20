@@ -366,13 +366,14 @@ h2 {
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container > p {
     text-align: right;
-    color: black;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-title-row {
     float: none;
+    color: black;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-date-row {
     float: none;
+    color: black;
   }
   .section-header {
     margin-top: 60px;
