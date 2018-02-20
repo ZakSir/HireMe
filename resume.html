@@ -53,11 +53,11 @@
                     <span id="formatted-candidate-name-given-name" data-bind="text: candidate.name.givenName"></span><span id="formatted-candidate-name-space">&nbsp;</span><span id="formatted-candidate-name-sur-name" data-bind="text: candidate.name.surname"></span>
                 </h2>
                 <p id="formatted-candidate-sub-info">
-                    <span id="formatted-candidate-location" data-bind="text: candidate.location"></span>
+                    <span id="formatted-candidate-location location-info" data-bind="text: candidate.location"></span>
                     <span class="decoration candidate-info-seperator"> | </span>
-                    <a id="formatted-candidate-email" data-bind="attr: { href: candidate.emailhref, title: candidate.email}, text: candidate.email "></a>
+                    <a id="formatted-candidate-email location-info" data-bind="attr: { href: candidate.emailhref, title: candidate.email}, text: candidate.email "></a>
                     <span class="decoration candidate-info-seperator"> | </span>
-                    <a id="formatted-candidate-phone-link" href="phone" data-bind="attr: { href: candidate.phoneHref }"><span data-bind="text: candidate.phoneDisplay"></span></a>
+                    <a id="formatted-candidate-phone-link location-info" href="phone" data-bind="attr: { href: candidate.phoneHref }"><span data-bind="text: candidate.phoneDisplay"></span></a>
                 </p>
             </div>
             <div id="formatted-objective" class="candidate-info">
@@ -90,15 +90,15 @@
                         <div class="formatted-company-header">
                             <h3 class="formatted-company-name">
                                 <span class="formatted-company-name-primary" data-bind="text: company"></span>
-                                <span class="decoration formatted-company-name-contractor-at-decoration" data-bind="if: contractorToVisible"> @ </span>
-                                <span class="formatted-company-name-contractor-to" data-bind="text: contractorToText"></span>
+                                <span class="decoration formatted-company-name-contractor-at-decoration contractor-decoration" data-bind="if: contractorToVisible"> @ </span>
+                                <span class="formatted-company-name-contractor-to contractor-decoration" data-bind="text: contractorToText"></span>
                             </h3>
                             <div class="formatted-title-and-date-alignment-container">
                                 <div class="formatted-title-and-date-container">
                                     <p class="formatted-title-row">
                                         <span class="formatted-job-title" data-bind="text: title"></span>
                                     </p>
-                                    <p class="formatted-date-row" data-bind="visible: $parent.dateDisplay() === 0, click: $parent.toggleDateDisplay">
+                                    <p class="formatted-date-row absolute-range" data-bind="visible: $parent.dateDisplay() === 0, click: $parent.toggleDateDisplay">
                                         <span class="formatted-job-start-date-month" data-bind="text: startDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-start-date-year" data-bind="text: startDate.year"></span>
                                         <span class="decoration formatted-job-title-date-range-seperator"> - </span>
                                         <span data-bind="ifnot: endDate === null ">
@@ -108,7 +108,7 @@
                                             Current
                                         </span>
                                     </p>
-                                    <p class="formatted-date-row" data-bind="visible: $parent.dateDisplay() === 1, click: $parent.toggleDateDisplay">
+                                    <p class="formatted-date-row timespan" data-bind="visible: $parent.dateDisplay() === 1, click: $parent.toggleDateDisplay">
                                         <span class="formatted-date-range" data-bind="text: dateRangeDisplay"></span>
                                     </p>
                                 </div>
