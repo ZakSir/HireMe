@@ -434,21 +434,24 @@ h2 {
     
                     .formatted-title-and-date-alignment-container 
                     {
-                        float: none;
+                        line-height: 60px;
+                        float: right;
+                        height: 60px;
                         display:block;
     
                         .formatted-title-and-date-container
                         {
-                            display: block;
+                            display: inline-block;
                             line-height: normal;
-                            color: white;
+                            vertical-align: middle;
+                            color: @colorWhitest;
     
                             > p {
                                 font-size: 0.9em;
                                 padding :0;
                                 font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
                                 font-weight :normal;
-                                color: white;
+                                color: @colorWhitest;
                             }
                             
                             .formatted-title-row {

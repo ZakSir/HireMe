@@ -290,12 +290,15 @@ h2 {
     display: none;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container {
-    float: none;
+    line-height: 60px;
+    float: right;
+    height: 60px;
     display: block;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container {
-    display: block;
+    display: inline-block;
     line-height: normal;
+    vertical-align: middle;
     color: white;
   }
   #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container > p {
