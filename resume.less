@@ -393,7 +393,9 @@ h2 {
          margin-right: auto;
     }
 
-    #formatted-top {    
+    #formatted-top { 
+        padding: 0 @localPadding;
+           
         .section-header {
             margin: @localPadding -@localPadding @grid -@localPadding;
             padding: 0 @localPadding;
@@ -445,14 +447,6 @@ h2 {
                             line-height: normal;
                             vertical-align: middle;
                             color: @colorWhitest;
-    
-                            > p {
-                                font-size: 0.9em;
-                                padding :0;
-                                font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
-                                font-weight :normal;
-                                color: @colorWhitest;
-                            }
                             
                             .formatted-title-row {
                                 display:block;
