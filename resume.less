@@ -1,0 +1,465 @@
+@fontNormal: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
+@fontThin: 'HelveticaNeue-Thin', 'Helvetica Neue Thin', 'Segoe UI Light';
+@fontBold: 'HelveticaNeue-Medium','Helvetica Neue Medium', 'Segoe UI';
+@colorPinkLink: rgb(255, 0, 234);
+@colorWhitest: white;
+@colorBlackest: black;
+@colorBrightBlue: #0099FF;
+@wborder: 1px solid @colorWhitest;
+@bborder: 1px solid @colorBlackest;
+
+@grid: 5px;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: @fontNormal;
+}
+
+footer {
+    font-size: 9pt;
+    padding: 10px;
+}
+
+.prettyprint {
+    margin: 0 !important;
+}
+
+a{
+    color: @colorPinkLink;
+    text-decoration: none;
+
+    &:link {
+        color: rgb(255, 0, 234);
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: rgb(255, 0, 234);
+        text-decoration: none;
+    }
+
+    &:active {
+        color: rgb(255, 0, 234);
+        text-decoration: none;    
+    }
+
+    &:hover {
+        color: rgb(255, 0, 234);
+        text-decoration: underline;
+    }
+}
+
+p {
+    margin: 0;
+    padding  : 5px 0;
+}
+
+h1 {
+    font-size: 2.6em;
+    font-family: 'consolas', 'Andale Mono', 'Courier', 'Courier New';
+
+    &.formatted {
+        font-family: @fontThin;
+        font-weight: normal;
+    }
+}
+
+h3, h4 {
+    font-family: @fontNormal;
+    font-weight :normal;
+
+}
+
+h2 {
+    font-family: @fontThin;
+    font-weight: normal;
+}
+
+.hljs
+{
+    white-space: pre-wrap;
+}
+
+#tabbed-container {
+    display: block;
+
+    .format-label
+    {
+        border: 1px solid black;
+
+        font-size: .9em;
+        display: inline-block;
+        padding: 10px;
+        margin: 0 0 -1px 0;
+    }
+
+    #formatted-label {
+        margin-left: -10px;
+
+        &.in-use-format  {
+            border-bottom: @wborder;
+        }   
+    }
+
+    #json-label{
+        &.in-use-format{
+            border-bottom: @wborder;
+        } 
+    }
+}
+
+.resume-container { 
+    border: @bborder;
+}
+
+#formatted-top {
+    padding: 10px;
+    font-family: @fontNormal;
+    font-weight :normal;
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: @grid; /* grid = 5 */
+    
+        border-bottom: @bborder;
+    }
+
+    .section-header {
+        margin: 10px -10px 5px -10px;
+        padding: 0 10px;
+    }
+
+    .formatted-skills-container {
+        color: #999999;
+
+        #formatted-skills{
+            p {
+                padding :0;
+            } 
+
+            h3 {
+                font-size: 1.2em; 
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    #formatted-name {
+        #formatted-candidate-name-given-name { 
+            font-family: @fontThin;
+            font-weight: normal;
+        }
+        
+        #formatted-candidate-name-sur-name {
+            font-family: @fontBold;
+            font-weight: normal;
+        }
+        
+        #formatted-candidate-name-space {
+            display:none;
+        }
+
+        .location-info {
+            display: block;
+        }
+
+        .candidate-info-seperator {
+            display:none;
+        }
+    }
+
+    #formatted-experience-container {
+        page-break-inside: avoid;
+    
+        #formatted-experience {
+            h3 {
+                font-size : 1.2em;
+            }
+
+            h4 {
+                font-size : 1.2em;
+                margin: 5px 0;
+            }
+
+            li 
+            {
+                font-size: 0.9em;
+            }
+
+            .formatted-experience-instance-container {
+                page-break-inside: avoid;
+
+                .formatted-company-header
+                {
+                    background-color: @colorBrightBlue;
+                    margin: 0 -10px;
+                    padding: 0 10px;
+
+                    .formatted-company-name 
+                    {
+                        display: block;
+                        margin: 0;
+                        padding: 10;
+                        color: @colorWhitest;
+
+                        .contractor-decoration 
+                        {
+                            display: none;
+                        }
+                    }
+                }
+
+                .formatted-title-and-date-alignment-container 
+                {
+                    float: none;
+                    display:block;
+
+                    .formatted-title-and-date-container
+                    {
+                        display: block;
+                        line-height: normal;
+                        color: white;
+
+                        > p {
+                            font-size: 0.9em;
+                            padding :0;
+                            font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
+                            font-weight :normal;
+                            color: white;
+                        }
+                        
+                        .formatted-title-row {
+                            display:block;
+                            float: left;
+                        }
+                        
+                        .formatted-date-row {
+                            color: #ddd;
+                        }
+                    }
+                }
+
+                .formatted-accomplishments {
+                    page-break-inside: avoid;
+                }
+            }
+
+            #formatted-top #formatted-experience-header {
+                border-bottom:none;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 600px)
+{
+    .formatted-company-name 
+    {
+        line-height: 60px;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .formatted-title-and-date-alignment-container 
+    {
+        line-height: 60px;
+        float: none;
+        height: 60px;
+        display:inline-block;
+    }
+
+    header, article, footer {
+         max-width:570px;
+         margin-left: auto;
+         margin-right: auto;
+    }
+
+    .formatted-title-and-date-alignment-container {
+        float:right;
+        padding: 10px 0;
+    }
+
+    .formatted-title-and-date-container {
+        display:block;
+    }
+}
+
+@media (min-width: 900px)
+{
+    header, article, footer {
+         max-width:870px;
+         margin-left: auto;
+         margin-right: auto;
+    }
+
+    #formatted-top {    
+        .section-header {
+            margin: 40px -40px 5px -40px;
+            padding: 0 40px;
+        }
+    
+        .formatted-skills-container {
+            color: #999999;
+    
+            #formatted-skills{
+                p {
+                    padding :0;
+                } 
+    
+                h3 {
+                    font-size: 1.2em; 
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    
+        #formatted-name {
+            #formatted-candidate-name {
+                margin-top:20px;
+            }
+
+            #formatted-candidate-name-given-name { 
+                font-family: @fontThin;
+                font-weight: normal;
+            }
+            
+            #formatted-candidate-name-sur-name {
+                font-family: @fontBold;
+                font-weight: normal;
+            }
+            
+            #formatted-candidate-name-space {
+                display:none;
+            }
+    
+            .location-info {
+                display: inline;
+            }
+
+            .candidate-info-seperator {
+                display:inline;
+            }
+        }
+    
+        #formatted-experience-container {
+        
+            #formatted-experience {
+                h3 {
+                    font-size : 1.5em;
+                }
+    
+                .formatted-experience-instance-container {
+    
+                    .formatted-company-header
+                    {
+                        margin: 0 -40px;
+                        padding: 0 40px;
+    
+                        .formatted-company-name 
+                        {
+                            display: block;
+                            margin: 0;
+                            padding: 10;
+                            color: @colorWhitest;
+    
+                            .contractor-decoration 
+                            {
+                                display: none;
+                            }
+                        }
+                    }
+    
+                    .formatted-title-and-date-alignment-container 
+                    {
+                        float: none;
+                        display:block;
+    
+                        .formatted-title-and-date-container
+                        {
+                            display: block;
+                            line-height: normal;
+                            color: white;
+    
+                            > p {
+                                font-size: 0.9em;
+                                padding :0;
+                                font-family: 'HelveticaNeue', 'Helvetica Neue', 'Segoe UI';
+                                font-weight :normal;
+                                color: white;
+                            }
+                            
+                            .formatted-title-row {
+                                display:block;
+                                float: left;
+                            }
+                            
+                            .formatted-date-row {
+                                color: #ddd;
+                            }
+                        }
+                    }
+    
+                    .formatted-accomplishments {
+                        page-break-inside: avoid;
+                    }
+                }
+    
+                #formatted-top #formatted-experience-header {
+                    border-bottom:none;
+                }
+            }
+        }
+    }
+
+}
+
+@media print { 
+    header
+    {
+         display: none !important;
+    }
+
+    .downloads {
+        display: none !important;
+    }
+
+    #tabs { 
+        display: none !important;
+    }
+
+    .resume-container {
+        border: none;
+    }
+
+    .formatted-date-row, .formatted-title-row {
+        color: black !important;
+    }
+    
+    .formatted-company-header
+    {
+        background-color: white;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    
+    .formatted-company-name 
+    {
+        color: black;
+    }
+
+    .section-header {
+        margin-top: 60px;
+    }
+
+    #formatted-candidate-name {
+        margin-top:20px;
+    }
+
+
+}
