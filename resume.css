@@ -327,17 +327,50 @@ h2 {
   .resume-container {
     border: none;
   }
-  .formatted-date-row,
-  .formatted-title-row {
-    color: black !important;
+  #formatted-top {
+    padding: 0 40px;
   }
-  .formatted-company-header {
-    background-color: white;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+  #formatted-top .section-header {
+    margin: 40px -40px 5px -40px;
+    padding: 0 40px;
   }
-  .formatted-company-name {
-    color: black;
+  #formatted-top #formatted-name .location-info {
+    display: inline;
+  }
+  #formatted-top #formatted-name .candidate-info-seperator {
+    display: inline;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header {
+    margin: 0 -40px;
+    padding: 0 40px;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-company-header .formatted-company-name .contractor-decoration {
+    display: none;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container {
+    line-height: 60px;
+    float: right;
+    height: 60px;
+    padding: 0;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container > p {
+    text-align: right;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-title-row {
+    float: none;
+  }
+  #formatted-top #formatted-experience-container #formatted-experience .formatted-experience-instance-container .formatted-title-and-date-alignment-container .formatted-title-and-date-container .formatted-date-row {
+    float: none;
   }
   .section-header {
     margin-top: 60px;

@@ -473,6 +473,8 @@ h2 {
 }
 
 @media print { 
+    @localPadding: @grid * 8;
+    
     header
     {
          display: none !important;
@@ -517,7 +519,7 @@ h2 {
                         padding: 0 @localPadding;
 
                         .formatted-company-name 
-                        {
+                        { 
                             display: inline-block;
                             margin: 0;
                             padding: 0;
