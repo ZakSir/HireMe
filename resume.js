@@ -36,7 +36,7 @@ data.dateDisplay = ko.observable(0);
 data.showJson = function() {
     appInsights.trackPageView("resume.json");
     data.visiblePage(0);
-}
+} 
 
 data.showHtml = function() {
     appInsights.trackPageView("resume.formatted");
