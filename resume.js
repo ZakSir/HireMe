@@ -18,6 +18,9 @@ function openRawGitHubFile(fileName)
 
 console.log("Working against commit <!-- COMMITHERE -->"); 
 
+var rawdata = '<!-- JSONINJSHERE -->';
+var data = JSON.parse(rawdata);
+
 // do phoneNumber
 var phoneNumberRaw = data.candidate.phone.toString(); // cuz its an int
 var areaCode = phoneNumberRaw.substring(0,3);
@@ -27,8 +30,6 @@ var rest = phoneNumberRaw.substring(6);
 data.candidate.phoneDisplay = "+1 (" + areaCode + ") " + cityCode + "-" + rest;
 data.candidate.phoneHref = "tel:" + phoneNumberRaw;
 
-var rawdata = '<!-- JSONINJSHERE -->';
-var data = JSON.parse(rawdata);
 data.candidate.emailhref = "mailto:" + data.candidate.email;
 data.visiblePage = ko.observable(1);
 data.dateDisplay = ko.observable(0);
