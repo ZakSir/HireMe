@@ -16,27 +16,10 @@ function openRawGitHubFile(fileName)
     window.open("https://raw.githubusercontent.com/ZakSir/HireMe/<!-- COMMITHERE -->/" + fileName);
 }
 
-console.log("Working against commit <!-- COMMITHERE -->");
+console.log("Working against commit <!-- COMMITHERE -->"); 
 
 var rawdata = '<!-- JSONINJSHERE -->';
 var data = JSON.parse(rawdata);
-data.candidate.emailhref = "mailto:" + data.candidate.email;
-data.visiblePage = ko.observable(1);
-data.dateDisplay = ko.observable(0);
-
-data.showJson = function() {
-    data.visiblePage(0);
-}
-
-data.showHtml = function() {
-    data.visiblePage(1);
-}
-
-data.toggleDateDisplay = function() { 
-    var dd = data.dateDisplay();
-    dd = ++dd % 2;
-    data.dateDisplay(dd);
-}
 
 // do phoneNumber
 var phoneNumberRaw = data.candidate.phone.toString(); // cuz its an int
@@ -46,6 +29,40 @@ var rest = phoneNumberRaw.substring(6);
 
 data.candidate.phoneDisplay = "+1 (" + areaCode + ") " + cityCode + "-" + rest;
 data.candidate.phoneHref = "tel:" + phoneNumberRaw;
+
+data.candidate.emailhref = "mailto:" + data.candidate.email;
+data.visiblePage = ko.observable(1);
+data.dateDisplay = ko.observable(0);
+
+data.showJson = function() {
+    appInsights.trackPageView("resume.json");
+    data.visiblePage(0);
+} 
+
+data.showHtml = function() {
+    appInsights.trackPageView("resume.formatted");
+    data.visiblePage(1);
+}
+
+data.toggleDateDisplay = function() { 
+    appInsights.trackEvent("toggleDateDisplay", { currentMode: data.dateDisplay()});
+    var dd = data.dateDisplay();
+    dd = ++dd % 2;
+    data.dateDisplay(dd);
+}
+
+data.clickPhone = function() {
+    appInsights.trackEvent("clickPhoneNumber");
+
+    window.open(data.phoneHref);
+}
+
+data.clickEmail = function() {
+    appInsights.trackEvent("clickEmail");
+
+    window.open(data.emailhref);
+}
+
 
 var i;
 for(i=0;i<data.proficiencies.length; i++)
