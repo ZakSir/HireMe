@@ -16,7 +16,7 @@ function openRawGitHubFile(fileName)
     window.open("https://raw.githubusercontent.com/ZakSir/HireMe/<!-- COMMITHERE -->/" + fileName);
 }
 
-console.log("Working against commit <!-- COMMITHERE -->");
+console.log("Working against commit <!-- COMMITHERE -->"); 
 
 // do phoneNumber
 var phoneNumberRaw = data.candidate.phone.toString(); // cuz its an int
